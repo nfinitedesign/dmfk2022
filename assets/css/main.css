@@ -1162,6 +1162,10 @@ button:disabled,
   input[type="button"],
   button,
   .button {
+    background: rgba(221, 173, 15, 0.144);
+    border-color: transparent white;
+    border-radius: 50px;
+    height: 3rem;
   }
 }
 
@@ -1428,6 +1432,30 @@ button:disabled,
   html,
   body {
     min-width: 320px;
+    padding: 0;
+  }
+
+  .bgvideo {
+    object-position: 80% 50%;
+  }
+
+  .bgvideo > video {
+    position: absolute;
+    left: -170vw;
+    top: 0;
+  }
+
+  .container {
+    padding: 5vw;
+    flex-direction: column;
+  }
+  .row2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 25ch;
   }
 }
 
