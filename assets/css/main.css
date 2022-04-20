@@ -81,7 +81,7 @@ body {
 
 body, input, select, textarea {
   color: #006466;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Helvetica LT Std", Helvetica, sans-serif;
   font-size: 16pt;
   font-weight: 300;
   line-height: 1.65em; }
@@ -1387,6 +1387,12 @@ input[type="radio"] + label:before {
     width: 100%; }
     .image.fit img {
       width: 100%; }
+  .image.fixed {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 8em; }
+    .image.fixed img {
+      width: 8em; }
 
 /* List */
 ol {
@@ -1507,7 +1513,8 @@ ul.icons {
   padding-left: 0; }
   ul.icons li {
     display: inline-block;
-    padding: 0 1.25em 0 0; }
+    padding: 0 1.25em 0 0;
+    vertical-align: top; }
     ul.icons li:last-child {
       padding-right: 0; }
     ul.icons li .icon:before {
@@ -1582,6 +1589,12 @@ table {
     table.alt tfoot {
       border-top: 0; }
 
+/* Map 
+	.map {
+		height: 100%;
+		width: 100%;
+	}
+*/
 /* Button */
 input[type="submit"],
 input[type="reset"],

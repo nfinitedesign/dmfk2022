@@ -1,15 +1,16 @@
 layout
 
 index
-- about/history
-- link zur rego
+X history
+X link zur rego
 - feld für sponsoring anfragen?
 
 (results)
 
 event
-- link zur rego
-- timetable
+X link zur rego
+X timetable
+- about
 - locations
 - housing
 
