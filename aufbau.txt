@@ -1,0 +1,23 @@
+layout
+
+index
+- about/history
+- link zur rego
+- feld für sponsoring anfragen?
+
+(results)
+
+event
+- link zur rego
+- timetable
+- locations
+- housing
+
+info
+- link zu participants
+- COVID19
+- Awareness
+- recommendations
+- crew
+
+contact
