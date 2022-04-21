@@ -1,0 +1,77 @@
+<html>
+<head>
+	<link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<style>
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#map {
+		min-height: 500px;
+		height: 100%;
+		width: 100%;
+	}
+	</style>
+</head>
+<body>
+	<div id="map"></div>
+	<script>
+		const accessToken = 'bD7NMBQtwdNDTngF9xcXUMoMKYY4E1vWsXAr1eQq9tJQpfhwuy2lD0KqS41V11Yu';
+		const styleId = '10e5778f-1b2e-4c03-abcb-ff434a5be1fb';
+		const map = L.map('map').setView([47.99231643459227, 7.83869371463104], 14);
+		L.tileLayer(
+			`https://tile.jawg.io/${styleId}/{z}/{x}/{y}.png?access-token=${accessToken}`, {
+			attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank" class="jawg-attrib">&copy; <b>Jawg</b>Maps</a> | <a href="https://www.openstreetmap.org/copyright" title="OpenStreetMap is open data licensed under ODbL" target="_blank" class="osm-attrib">&copy; OSM contributors</a>',
+			maxZoom: 17,
+			minZoom: 13
+			}
+		).addTo(map);
+
+		var data = [{
+		"latitud": 47.99024655885035, 
+		"longitud": 7.876626614847946,
+		"name": "Housing"
+		}, {
+		"latitud": 47.97452301521526, 
+		"longitud": 7.828171830594039,
+		"name": "Main Race HQ"
+		},
+		{
+		"latitud": 47.98593936779385, 
+		"longitud": 7.8309651780539085,
+		"name": "Party"
+		},
+		{
+		"latitud": 47.987364064761735, 
+		"longitud": 7.873320586214088,
+		"name": "Anmeldung Donnerstag"
+		},]
+
+		var jsonFeatures = [];
+
+		data.forEach(function(point, markerIndex){
+			var lat = point.latitud;
+			var lon = point.longitud;
+			var titleString = markerIndex.toString() + ": " + point.name;
+			var markerOptions = {
+				title: titleString,
+				alt: titleString,
+				clickable: true,
+				draggable: false,
+				opacity: 0.5,
+				icon: L.icon({
+					iconUrl: 'https://www.jawg.io/docs/images/icons/eiffel-tower.png',
+					iconSize: [50, 50]
+				})
+			};
+				
+			var marker = new L.marker([lat, lon], markerOptions);
+			marker.bindTooltip(titleString, {permanent: true, className: "my-label", offset: [5, 0] });
+			marker.addTo(map);
+
+			// L.marker([lat, lon], markerOptions).addTo(map);
+		});
+	</script>
+</body>
+</html>

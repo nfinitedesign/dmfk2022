@@ -6,29 +6,25 @@
 -->
 <html>
 	<head>
-		<title>Photon by HTML5 UP</title>
+		<title>DMFK 2022 Freiburg</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
-		<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+		<link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet" />
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<section id="header">
 				<div class="inner">
-					<!-- <span class="icon solid major fa-cloud"></span> -->
 					<img src="images/logo.png">
-					<h1> <strong>Deutsche Meisterschaft der Fahrradkuriere*innen</strong></h1>
+					<h1> <strong>Deutsche Meisterschaft der Fahrradkurier*innen</strong></h1>
 					<p>Wir hoffen Ihr seid das warten satt und es hat sich eine geballte Ladung an Hunger bei euch angestaut, <br />
-					 	denn wir, die Freiburger Fahrrad und Kurier Kru e.V., laden ein zum <b>D</b>inner <b>M</b>it <b>F</b>reiburgs <b>K</b>urieren*innen. <br />
+					 	denn wir, die Freiburger Fahrrad und Kurier Kru e.V., laden ein zum <b>D</b>inner <b>M</b>it <b>F</b>reiburgs <b>K</b>urier*innen. <br />
 						Mit geschmorten Reifen, Schweißperlen und Alleycats zum Frühstück werden wir eure Beine und Knie mit einem <br />
 				 	 	vier Gänge Menü über das <strong>Wochenende vom 07-10. Juli</strong> zum Glühen bringen. More information coming soon...</p>
-<!-- 					<ul class="actions special">
-						<li><a href="#one" class="button scrolly">Sponsoring</a></li>
-					</ul> -->
 				</div>
 			</section>
 
@@ -300,7 +296,7 @@
 						<div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
 							<h3>Sponsoring</h3>
-							<p>Der Einkaufszettel ist lang, denn Kuriere*innen verbrennen viele Kalorien (mind. 3333 kcal/Schicht). Daher sind wir auf Ihre Unterstützung angewiesen.</p>
+							<p>Der Einkaufszettel ist lang, denn Kurier*innen verbrennen viele Kalorien (mind. 3333 kcal/Schicht). Daher sind wir auf Ihre Unterstützung angewiesen.</p>
 							<ul class="actions special">
 								<li><a href="#" class="button">Hier klicken</a></li>
 							</ul>
@@ -308,7 +304,7 @@
 						<div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 							<h3>Volunteers</h3>
-							<p>Für ein vorzügliches Wochenende braucht es nicht nur Kellner*innen und Köche*innen. Möchtest du uns helfen was Feines zu zaubern?</p>
+							<p>Für ein vorzügliches Dinner braucht es nicht nur hungrige Gäste, feinste Leckereien und begabte Köch*inne. Möchtest du uns  dabei helfen was Feines zu zaubern?</p>
 							<ul class="actions special">
 								<li><a href="#" class="button">Hier klicken</a></li>
 							</ul>
@@ -339,15 +335,70 @@
 						<p>Hier findest du hauptsächlich ESSEN, aber auch alles andere.</p>
 					</header>
 					<div class="row gtr-150">
-<!-- 						<div class="col-8 col-12-medium">
-							<iframe src="https://www.google.com/maps/d/embed?mid=1Mz2v5dHsq7mBRwaAgna1n_cW5nS-MaK2&ehbc=2E312F" width="640" height="480"></iframe>
-						</div> -->
-						<iframe src="https://api.jawg.io/maps/46d05877-7d9f-4be7-b192-1eae9e1f22c2/dfac426f-e98b-4c81-8e52-47eb7a4cb203.html?access-token=bD7NMBQtwdNDTngF9xcXUMoMKYY4E1vWsXAr1eQq9tJQpfhwuy2lD0KqS41V11Yu" width="640px" height="480px"></iframe>
+						<div id="map" class="col-8 col-12-medium map"></div>
+						<script>
+							const accessToken = 'bD7NMBQtwdNDTngF9xcXUMoMKYY4E1vWsXAr1eQq9tJQpfhwuy2lD0KqS41V11Yu';
+							const styleId = '10e5778f-1b2e-4c03-abcb-ff434a5be1fb';
+							const map = L.map('map').setView([47.99231643459227, 7.83869371463104], 14);
+							L.tileLayer(
+								`https://tile.jawg.io/${styleId}/{z}/{x}/{y}.png?access-token=${accessToken}`, {
+								attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank" class="jawg-attrib">&copy; <b>Jawg</b>Maps</a> | <a href="https://www.openstreetmap.org/copyright" title="OpenStreetMap is open data licensed under ODbL" target="_blank" class="osm-attrib">&copy; OSM contributors</a>',
+								maxZoom: 17,
+								minZoom: 12
+								}
+							).addTo(map);
+
+							var data = [{
+							"latitud": 47.99024655885035, 
+							"longitud": 7.876626614847946,
+							"name": "Housing"
+							}, {
+							"latitud": 47.97452301521526, 
+							"longitud": 7.828171830594039,
+							"name": "Main Race HQ"
+							},
+							{
+							"latitud": 47.98593936779385, 
+							"longitud": 7.8309651780539085,
+							"name": "Party"
+							},
+							{
+							"latitud": 47.987364064761735, 
+							"longitud": 7.873320586214088,
+							"name": "Anmeldung Donnerstag"
+							},]
+
+							var jsonFeatures = [];
+
+							data.forEach(function(point, markerIndex){
+								var lat = point.latitud;
+								var lon = point.longitud;
+								var titleString = markerIndex.toString() + ": " + point.name;
+								var markerOptions = {
+									title: titleString,
+									alt: titleString,
+									clickable: true,
+									draggable: false,
+									opacity: 0.5,
+									icon: L.icon({
+										iconUrl: 'https://www.jawg.io/docs/images/icons/eiffel-tower.png',
+										iconSize: [50, 50]
+									})
+								};
+									
+								var marker = new L.marker([lat, lon], markerOptions);
+								marker.bindTooltip(titleString, {permanent: true, className: "my-label", offset: [5, 0] });
+								marker.addTo(map);
+
+								// L.marker([lat, lon], markerOptions).addTo(map);
+							});
+						</script>
+
 						<div class="col-4 col-12-medium">
-							<h5>Restaurants</h5>
+							<h3>Restaurants</h3>
 							<ol>
 								<li>Main Race HQ </br><sup>Zentrum Oberwiehre</sup></li>
-								<li>Anmeldung Donnerstag </br><sup>SUSI Café Vaubanallee 2</sup></li>
+								<li>Anmeldung Donnerstag </br><sup>SUSI Café, Vaubanallee 2</sup></li>
 								<li>Anmeldung Freitag</li>
 								<li>Anmeldung Samstag</li>
 								<li>Housing</li>
@@ -362,11 +413,85 @@
 				</div>
 			</section>
 
+		<!-- COVID19 -->
+			<section id="covid19" class="main style2">
+				<div class="container">
+					<header class="major">
+						<h1>Information bzgl. COVID19</h1>
+						<p>Wir lassen uns vom Virus nicht die Suppe versalzen!</p>
+					</header>
+					<p>Auch wenn es so aussieht, als würden alle Anti-Covid-Einschränkungen bis Juli zurückgenommen, wollen wir einige Worte zum Thema loswerden. Wir sind uns des Risikos einer Veranstaltung mit einigen hundert Menschen im Hinblick auf die weitere Ausbreitung des Virus bewusst. Trotzdem wollen wir mit euch allen ein gesundes Menü verköstigen!</p>
+
+					<p>Zum jetzigen Zeitpunkt ist es für uns unmöglich vorherzusagen wie die Situation im Juli sein wird. Wir werden rechtzeitig vor der Veranstaltung einige allgemeine Anti-Covid-Regeln bekannt geben. Wir werden versuchen, die meisten Aktionen im Freien oder in gut belüfteten Bereichen abzuhalten. Je mehr von uns getestet/geimpft/genesen sind, desto besser. Sobald es zu diesem Thema wesentliche Neuigkeiten oder Updates gibt, findet ihr diese hier oder auf unserem Instagram-Kanal.</p>
+				</div>
+			</section>
+
+		<!-- Kontaktformular -->
+			<section id="kontakt" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h1>Kontakt</h1>
+						<p>Schreib uns ne Mail!</p>
+					</header>
+					<form method="post" action="#">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="email-name" id="email-name" value="" placeholder="Name" />
+							</div>
+							<div class="col-6 col-12-xsmall">
+								<input type="email" name="email-email" id="email-email" value="" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<select name="email-category" id="email-category">
+									<option value="">- Kategorie wählen -</option>
+									<option value="1">Sponsoring</option>
+									<option value="1">Informationen</option>
+									<option value="1">Volunteer</option>
+								</select>
+							</div>
+							<div class="col-6 col-12-small">
+								<input type="checkbox" id="email-copy" name="email-copy">
+								<label for="email-copy">Kopie an eigene Email</label>
+							</div>
+							<div class="col-6 col-12-small">
+								<input type="checkbox" id="email-human" name="email-human" checked>
+								<label for="email-human">Not a robot</label>
+							</div>
+							<div class="col-12">
+								<textarea name="email-message" id="email-message" placeholder="Nachricht hier eingeben" rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<li><input type="submit" value="Nachricht senden" class="primary" /></li>
+									<li><input type="reset" value="Zurücksetzen" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+
+		<!-- Awareness -->
+			<section id="awareness" class="main style2">
+				<div class="container">
+					<header class="major">
+						<h1>Awareness</h1>
+						<p>Vom Feministischen Radsportkollektiv, dem Awareness Team:</p>
+					</header>
+					<p>Diskriminierung und das Überschreiten persönlicher Grenzen passieren in unserer Gesellschaft täglich. Rassistische oder sexistische Kommentare und Witze, heteronormative Annahmen oder das Berühren von jemandem ohne dessen Zustimmung sind nur einige Beispiele.</p>
+					<p>Das können und wollen wir nicht hinnehmen. Unser Ziel ist es, die DMFK für alle so sicher und zugänglich wie möglich zu machen. Wir bitten euch, während der gesamten Veranstaltung aufeinander Rücksicht zu nehmen und gemeinsam Verantwortung zu übernehmen. Wir möchten, dass sich alle wohlfühlen und sich frei ausdrücken können, ohne jedoch die Grenzen anderer zu verletzen.</p>
+					<p>Wir möchten sagen können, dass die gesamte Veranstaltung ein sicherer Raum ist, in dem keine Grenzen überschritten werden. Uns ist jedoch bewusst, dass dies unter den gegebenen gesellschaftlichen und wirtschaftlichen Gegebenheiten noch nicht hundertprozentig umsetzbar ist. Aus diesem Grund wird das Feministische Radsportkollektiv als Awareness Team agieren und eine Notrufnummer sowie einen Safer Space / Rückzugsort bereitstellen, an dem man sich zurückziehen kann. Falls du dich in irgendeiner Weise unsicher fühlen solltest oder bemerken solltest, dass jemand anderes belästigt wird oder sich unwohl fühlt, zöger bitte nicht, einem der AwareMess-Freiwilligen zu gehen oder unsere Notrufnummer anzurufen.</p>
+					<p>Gewalt oder Androhung von Gewalt, verbale oder körperliche Belästigung, sexistische, homophobe, transphobe und rassistische Äußerungen oder jegliche Art von grenzüberschreitendem Verhalten werden während der DMFK Freiburg nicht geduldet. Wie mit solchen Vorfällen umgegangen wird, entscheiden wir je nach Situation. Wenn sich Personen jedoch grundsätzlich gegen einen respektvollen Umgang miteinander wehren, werden wir sie von der Veranstaltung ausschließen.</p>
+				</div>
+			</section>
+
+
 		<!-- Sponsoren -->
 			<section id="sponsoren" class="main style1 special">
 				<div class="container">
 					<header class="major">
 						<h1>Sponsoren</h1>
+						<p>Wir danken unseren großartigen Unterstützern!</p>
 					</header>
 					<div class="col-6 col-12-medium">
 						<ul class="icons">

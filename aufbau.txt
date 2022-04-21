@@ -3,7 +3,7 @@ layout
 index
 X history
 X link zur rego
-- feld für sponsoring anfragen?
+X feld für sponsoring anfragen?
 
 (results)
 
@@ -11,14 +11,16 @@ event
 X link zur rego
 X timetable
 - about
-- locations
+X locations
 - housing
 
 info
 - link zu participants
-- COVID19
-- Awareness
+X COVID19
+X Awareness
 - recommendations
 - crew
 
-contact
+X contact
+impressum
+datenschutz
