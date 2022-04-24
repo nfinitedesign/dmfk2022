@@ -2,6 +2,7 @@
 <head>
 	<link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet" />
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<link rel="stylesheet" href="assets/fontawesome/css/all.css"/>
 	<style>
 	body {
 		margin: 0;
@@ -11,6 +12,12 @@
 		min-height: 500px;
 		height: 100%;
 		width: 100%;
+	}
+	.map-marker {
+		text-align: center;
+		vertical-align: center;
+		color: white;
+		font-size: 2em;
 	}
 	</style>
 </head>
@@ -50,9 +57,10 @@
 
 		var jsonFeatures = [];
 
-		data.forEach(function(point, markerIndex){
+		data.forEach(function(point, index){
 			var lat = point.latitud;
 			var lon = point.longitud;
+			var markerIndex= index + 1;
 			var titleString = markerIndex.toString() + ": " + point.name;
 			var markerOptions = {
 				title: titleString,
@@ -60,17 +68,17 @@
 				clickable: true,
 				draggable: false,
 				opacity: 0.5,
-				icon: L.icon({
+				icon: L.divIcon({
 					iconUrl: 'https://www.jawg.io/docs/images/icons/eiffel-tower.png',
-					iconSize: [50, 50]
+					iconSize: [50, 50],
+					html: '<i class="map-marker fa-solid fa-' + markerIndex.toString() + '"></i>',
+					className: 'map-marker'
 				})
 			};
 				
 			var marker = new L.marker([lat, lon], markerOptions);
-			marker.bindTooltip(titleString, {permanent: true, className: "my-label", offset: [5, 0] });
+			marker.bindTooltip(titleString, {permanent: false, className: "my-label", offset: [5, 0] });
 			marker.addTo(map);
-
-			// L.marker([lat, lon], markerOptions).addTo(map);
 		});
 	</script>
 </body>
