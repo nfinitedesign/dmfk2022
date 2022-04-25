@@ -626,6 +626,7 @@
 				line-height: 1em;
 			}
 		}
+
 	}
 
 /* Image */
@@ -669,6 +670,16 @@
 
 			img {
 				width: 100%;
+			}
+		}
+
+		&.fixed {
+			display: block;
+			margin: 0 0 _size(element-margin) 0;
+			width: 8em;
+
+			img {
+				width: 8em;
 			}
 		}
 	}
@@ -820,6 +831,7 @@
 		li {
 			display: inline-block;
 			padding: 0 1.25em 0 0;
+			vertical-align: top;
 
 			&:last-child {
 				padding-right: 0;
@@ -938,6 +950,13 @@
 			}
 		}
 	}
+
+/* Map 
+	.map {
+		height: 100%;
+		width: 100%;
+	}
+*/
 
 /* Button */
 

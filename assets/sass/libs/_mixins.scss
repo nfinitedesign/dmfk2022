@@ -76,3 +76,15 @@
 	@return url("data:image/svg+xml;charset=utf8,#{$svg}");
 
 }
+
+
+@mixin stroke($width, $color) {
+  $shadow: ();
+  @for $i from -$width through $width {
+    $shadow: append($shadow,#{$width}px #{$i}px $color, comma);
+    $shadow: append($shadow,#{-$width}px #{$i}px $color, comma);
+    $shadow: append($shadow,#{$i}px #{$width}px $color, comma);
+    $shadow: append($shadow,#{$i}px #{-$width}px $color, comma);
+  }
+  text-shadow: $shadow;
+}
