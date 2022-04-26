@@ -3,7 +3,11 @@ layout
 index
 X history
 X link zur rego
+<<<<<<< HEAD
 - feld für sponsoring anfragen?
+=======
+X feld für sponsoring anfragen?
+>>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 
 (results)
 
@@ -11,14 +15,29 @@ event
 X link zur rego
 X timetable
 - about
+<<<<<<< HEAD
 - locations
+=======
+X locations
+>>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 - housing
 
 info
 - link zu participants
+<<<<<<< HEAD
 - COVID19
 - Awareness
 - recommendations
 - crew
 
 contact
+=======
+X COVID19
+X Awareness
+- recommendations
+- crew
+
+X contact
+impressum
+datenschutz
+>>>>>>> 929900cee366f964df309718509e5c8c4583c0eb

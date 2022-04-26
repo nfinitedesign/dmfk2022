@@ -6,19 +6,25 @@
 -->
 <html>
 	<head>
-		<title>Photon by HTML5 UP</title>
+		<title>DMFK 2022 Freiburg</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<<<<<<< HEAD
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
 		<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+=======
+		<link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet" />
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+>>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<section id="header">
 				<div class="inner">
+<<<<<<< HEAD
 					<!-- <span class="icon solid major fa-cloud"></span> -->
 					<img src="images/logo.png">
 					<h1> <strong>Deutsche Meisterschaft der Fahrradkuriere*innen</strong></h1>
@@ -29,6 +35,14 @@
 <!-- 					<ul class="actions special">
 						<li><a href="#one" class="button scrolly">Sponsoring</a></li>
 					</ul> -->
+=======
+					<img src="images/logo.png">
+					<h1> <strong>Deutsche Meisterschaft der Fahrradkurier*innen</strong></h1>
+					<p>Wir hoffen Ihr seid das warten satt und es hat sich eine geballte Ladung an Hunger bei euch angestaut, <br />
+					 	denn wir, die Freiburger Fahrrad und Kurier Kru e.V., laden ein zum <b>D</b>inner <b>M</b>it <b>F</b>reiburgs <b>K</b>urier*innen. <br />
+						Mit geschmorten Reifen, Schweißperlen und Alleycats zum Frühstück werden wir eure Beine und Knie mit einem <br />
+				 	 	vier Gänge Menü über das <strong>Wochenende vom 07-10. Juli</strong> zum Glühen bringen. More information coming soon...</p>
+>>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 				</div>
 			</section>
 
@@ -258,6 +272,7 @@
 								<li><span class="icon solid style4 major fa-cog"></span></li>
 								<li><span class="icon solid style5 major fa-desktop"></span></li>
 								<li><span class="icon solid style6 major fa-calendar"></span></li>
+								<li><span class="icon solid style6 major fa-1"></span></li>
 							</ul>
 						</div>
 						<div class="col-6 col-12-medium">
@@ -300,7 +315,11 @@
 						<div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
 							<h3>Sponsoring</h3>
+<<<<<<< HEAD
 							<p>Der Einkaufszettel ist lang, denn Kuriere*innen verbrennen viele Kalorien (mind. 3333 kcal/Schicht). Daher sind wir auf Ihre Unterstützung angewiesen.</p>
+=======
+							<p>Der Einkaufszettel ist lang, denn Kurier*innen verbrennen viele Kalorien (mind. 3333 kcal/Schicht). Daher sind wir auf Ihre Unterstützung angewiesen.</p>
+>>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 							<ul class="actions special">
 								<li><a href="#" class="button">Hier klicken</a></li>
 							</ul>
@@ -308,7 +327,11 @@
 						<div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 							<h3>Volunteers</h3>
+<<<<<<< HEAD
 							<p>Für ein vorzügliches Wochenende braucht es nicht nur Kellner*innen und Köche*innen. Möchtest du uns helfen was Feines zu zaubern?</p>
+=======
+							<p>Für ein vorzügliches Dinner braucht es nicht nur hungrige Gäste, feinste Leckereien und begabte Köch*inne. Möchtest du uns  dabei helfen was Feines zu zaubern?</p>
+>>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 							<ul class="actions special">
 								<li><a href="#" class="button">Hier klicken</a></li>
 							</ul>
@@ -339,6 +362,7 @@
 						<p>Hier findest du hauptsächlich ESSEN, aber auch alles andere.</p>
 					</header>
 					<div class="row gtr-150">
+<<<<<<< HEAD
 <!-- 						<div class="col-8 col-12-medium">
 							<iframe src="https://www.google.com/maps/d/embed?mid=1Mz2v5dHsq7mBRwaAgna1n_cW5nS-MaK2&ehbc=2E312F" width="640" height="480"></iframe>
 						</div> -->
@@ -348,6 +372,73 @@
 							<ol>
 								<li>Main Race HQ </br><sup>Zentrum Oberwiehre</sup></li>
 								<li>Anmeldung Donnerstag </br><sup>SUSI Café Vaubanallee 2</sup></li>
+=======
+						<div id="map" class="col-8 col-12-medium"></div>
+						<script>
+							const accessToken = 'bD7NMBQtwdNDTngF9xcXUMoMKYY4E1vWsXAr1eQq9tJQpfhwuy2lD0KqS41V11Yu';
+							const styleId = '10e5778f-1b2e-4c03-abcb-ff434a5be1fb';
+							const map = L.map('map').setView([47.99231643459227, 7.83869371463104], 14);
+							L.tileLayer(
+								`https://tile.jawg.io/${styleId}/{z}/{x}/{y}.png?access-token=${accessToken}`, {
+								attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank" class="jawg-attrib">&copy; <b>Jawg</b>Maps</a> | <a href="https://www.openstreetmap.org/copyright" title="OpenStreetMap is open data licensed under ODbL" target="_blank" class="osm-attrib">&copy; OSM contributors</a>',
+								maxZoom: 17,
+								minZoom: 12
+								}
+							).addTo(map);
+
+							var data = [{
+							"latitud": 47.99024655885035, 
+							"longitud": 7.876626614847946,
+							"name": "Housing"
+							}, {
+							"latitud": 47.97452301521526, 
+							"longitud": 7.828171830594039,
+							"name": "Main Race HQ"
+							},
+							{
+							"latitud": 47.98593936779385, 
+							"longitud": 7.8309651780539085,
+							"name": "Party"
+							},
+							{
+							"latitud": 47.987364064761735, 
+							"longitud": 7.873320586214088,
+							"name": "Anmeldung Donnerstag"
+							},]
+
+							var jsonFeatures = [];
+
+							data.forEach(function(point, index){
+								var lat = point.latitud;
+								var lon = point.longitud;
+								var markerIndex= index + 1;
+								var titleString = markerIndex.toString() + ": " + point.name;
+								var markerOptions = {
+									title: titleString,
+									alt: titleString,
+									clickable: true,
+									draggable: false,
+									opacity: 0.5,
+									icon: L.divIcon({
+										iconUrl: 'https://www.jawg.io/docs/images/icons/eiffel-tower.png',
+										iconSize: [50, 50],
+										html: '<i class="map-marker fa-solid fa-' + markerIndex.toString() + '"></i>',
+										className: 'map-marker'
+									})
+								};
+									
+								var marker = new L.marker([lat, lon], markerOptions);
+								marker.bindTooltip(titleString, {permanent: false, className: "my-label", offset: [5, 0] });
+								marker.addTo(map);
+							});
+						</script>
+
+						<div class="col-4 col-12-medium">
+							<h3>Restaurants</h3>
+							<ol>
+								<li>Main Race HQ </br><sup>Zentrum Oberwiehre</sup></li>
+								<li>Anmeldung Donnerstag </br><sup>SUSI Café, Vaubanallee 2</sup></li>
+>>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 								<li>Anmeldung Freitag</li>
 								<li>Anmeldung Samstag</li>
 								<li>Housing</li>
@@ -361,12 +452,154 @@
 					</div>
 				</div>
 			</section>
+<<<<<<< HEAD
 
+=======
+
+		<!-- COVID19 -->
+			<section id="covid19" class="main style2">
+				<div class="container">
+					<header class="major">
+						<h1>Information bzgl. COVID19</h1>
+						<p>Wir lassen uns vom Virus nicht die Suppe versalzen!</p>
+					</header>
+					<p>Auch wenn es so aussieht, als würden alle Anti-Covid-Einschränkungen bis Juli zurückgenommen, wollen wir einige Worte zum Thema loswerden. Wir sind uns des Risikos einer Veranstaltung mit einigen hundert Menschen im Hinblick auf die weitere Ausbreitung des Virus bewusst. Trotzdem wollen wir mit euch allen ein gesundes Menü verköstigen!</p>
+
+					<p>Zum jetzigen Zeitpunkt ist es für uns unmöglich vorherzusagen wie die Situation im Juli sein wird. Wir werden rechtzeitig vor der Veranstaltung einige allgemeine Anti-Covid-Regeln bekannt geben. Wir werden versuchen, die meisten Aktionen im Freien oder in gut belüfteten Bereichen abzuhalten. Je mehr von uns getestet/geimpft/genesen sind, desto besser. Sobald es zu diesem Thema wesentliche Neuigkeiten oder Updates gibt, findet ihr diese hier oder auf unserem Instagram-Kanal.</p>
+				</div>
+			</section>
+
+		<!-- Kontaktformular -->
+			<section id="kontakt" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h1>Kontakt</h1>
+						<p>
+							Schreib uns ne Mail! Entweder direkt über das Formular oder an eine der folgenden Adressen:<br/>
+							Sponsoren: <a href="mailto:sponsoring@dmfk2022.de">sponsoring@dmfk2022.de</a><br/>
+							Volunteers: <a href="mailto:help@dmfk2022.de">help@dmfk2022.de</a><br/>
+							Sonstiges: <a href="mailto:kontakt@dmfk2022.de">kontakt@dmfk2022.de</a><br/>
+						</p>
+					</header>
+					<form method="post" action="#" id="contact-form">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="email-name" id="email-name" value="" placeholder="Name" data-rule="required|name" />
+							</div>
+							<div class="col-6 col-12-xsmall">
+								<input type="email" name="email-email" id="email-email" value="" placeholder="Email" data-rule="required|email" />
+							</div>
+							<div class="col-12">
+								<select name="email-category" id="email-category" data-rule="required|integer">
+									<option value="">- Kategorie wählen -</option>
+									<option value="1">Sponsoring</option>
+									<option value="2">Volunteering</option>
+									<option value="3">Sonstiges</option>
+								</select>
+							</div>
+							<div class="col-12">
+								<input type="text" name="email-subject" id="email-subject" value="" placeholder="Betreff" />
+							</div>
+							<div class="col-12">
+								<textarea name="email-message" id="email-message" placeholder="Nachricht hier eingeben" rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<li>
+										<button class="g-recaptcha primary" data-sitekey="site_key" data-callback='onSubmit' data-action='submit'>Nachricht senden</button>
+										<input type="hidden" value="submitted" />
+									</li>
+									<li><input type="reset" value="Zurücksetzen" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+<!-- 					<script src="https://www.google.com/recaptcha/enterprise.js?render=6Ldgv5gfAAAAAPLfyeo0KGShpU7P2xvyPWW2SW_m"></script> -->
+					<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+					<script type="text/javascript" src="assets/js/js-form-validator.js"></script>
+					<script>
+						// new Validator(document.querySelector('#contact-form'), function (err, res) { return res; });
+						var form = document.getElementById('contact-form'),
+							name = document.getElementById('email-name'),
+							email = document.getElementById('email-email'),
+							subject = document.getElementById('email-subject'),
+							message = document.getElementById('email-message'),
+							category = document.getElementById('email-category');
+
+						var formdata = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message +'&category=' + category;
+
+						form.addEventListener('submit', function(event) {
+							$.ajax({
+								type: "POST",
+								url: "contact.php",
+								data: formdata,
+								cache: false,
+								success: function(html) {
+									alert(html);
+								}
+							});
+						});
+	
+
+							// form.addEventListener('submit', function(event) {
+							// 	event.preventDefault();
+
+							// 	var data = new FormData(form);
+
+							// 	var xhr = new XMLHttpRequest();
+							// 	xhr.open('POST', './contact.php');
+							// 	xhr.onload = function() {
+							// 		alert(xhr.status)
+							// 		if (xhr.status === 200) {
+							// 			// if the response is json encoded
+							// 			var response = JSON.parse(xhr.responseText);
+							// 			alert(response.message)
+							// 			if (response.message == 'valid') {
+							// 				alert("FUUUUUHGHU")
+							// 			}
+
+							// 			if (response.message == 'invalid') {
+							// 				name.setCustomValidity('your name is not correct');
+							// 			}
+							// 		}
+							// 	}
+							// 	xhr.send(data); 
+							// });
+
+						// grecaptcha.enterprise.ready(function() {
+						// 	grecaptcha.enterprise.execute('6Ldgv5gfAAAAAPLfyeo0KGShpU7P2xvyPWW2SW_m', {action: 'submit'}).then(function(token) {
+						// 		alert(name.value)
+						// 	});
+						// });
+					</script>
+				</div>
+			</section>
+
+		<!-- Awareness -->
+			<section id="awareness" class="main style2">
+				<div class="container">
+					<header class="major">
+						<h1>Awareness</h1>
+						<p>Vom Feministischen Radsportkollektiv, dem Awareness Team:</p>
+					</header>
+					<p>Diskriminierung und das Überschreiten persönlicher Grenzen passieren in unserer Gesellschaft täglich. Rassistische oder sexistische Kommentare und Witze, heteronormative Annahmen oder das Berühren von jemandem ohne dessen Zustimmung sind nur einige Beispiele.</p>
+					<p>Das können und wollen wir nicht hinnehmen. Unser Ziel ist es, die DMFK für alle so sicher und zugänglich wie möglich zu machen. Wir bitten euch, während der gesamten Veranstaltung aufeinander Rücksicht zu nehmen und gemeinsam Verantwortung zu übernehmen. Wir möchten, dass sich alle wohlfühlen und sich frei ausdrücken können, ohne jedoch die Grenzen anderer zu verletzen.</p>
+					<p>Wir möchten sagen können, dass die gesamte Veranstaltung ein sicherer Raum ist, in dem keine Grenzen überschritten werden. Uns ist jedoch bewusst, dass dies unter den gegebenen gesellschaftlichen und wirtschaftlichen Gegebenheiten noch nicht hundertprozentig umsetzbar ist. Aus diesem Grund wird das Feministische Radsportkollektiv als Awareness Team agieren und eine Notrufnummer sowie einen Safer Space / Rückzugsort bereitstellen, an dem man sich zurückziehen kann. Falls du dich in irgendeiner Weise unsicher fühlen solltest oder bemerken solltest, dass jemand anderes belästigt wird oder sich unwohl fühlt, zöger bitte nicht, einem der AwareMess-Freiwilligen zu gehen oder unsere Notrufnummer anzurufen.</p>
+					<p>Gewalt oder Androhung von Gewalt, verbale oder körperliche Belästigung, sexistische, homophobe, transphobe und rassistische Äußerungen oder jegliche Art von grenzüberschreitendem Verhalten werden während der DMFK Freiburg nicht geduldet. Wie mit solchen Vorfällen umgegangen wird, entscheiden wir je nach Situation. Wenn sich Personen jedoch grundsätzlich gegen einen respektvollen Umgang miteinander wehren, werden wir sie von der Veranstaltung ausschließen.</p>
+				</div>
+			</section>
+
+
+>>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 		<!-- Sponsoren -->
 			<section id="sponsoren" class="main style1 special">
 				<div class="container">
 					<header class="major">
 						<h1>Sponsoren</h1>
+<<<<<<< HEAD
+=======
+						<p>Wir danken unseren großartigen Unterstützern!</p>
+>>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 					</header>
 					<div class="col-6 col-12-medium">
 						<ul class="icons">
@@ -387,7 +620,11 @@
 					<li><a href="http://www.fkk-freiburg.org/" class="icon solid fa fa-globe"><span class="label">Website</span></a></li>
 					<li><a href="https://www.facebook.com/fahrradkurierkumpel" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="https://www.instagram.com/dmfk.2022/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+<<<<<<< HEAD
 					<li><a href="mailto:info@dmfk2022.de" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+=======
+					<li><a href="mailto:kontakt@dmfk2022.de" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+>>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 				</ul>
 				<ul class="copyright">
 					<li>&copy; 2022 Fahrrad und Kurier Kru Freiburg e.V.</li>

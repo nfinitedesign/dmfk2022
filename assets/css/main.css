@@ -1,4 +1,4 @@
-@import url("fontawesome-all.min.css");
+@import url("../fontawesome/css/all.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 /*
 	Photon by HTML5 UP
@@ -1589,12 +1589,25 @@ table {
     table.alt tfoot {
       border-top: 0; }
 
+<<<<<<< HEAD
 /* Map 
 	.map {
 		height: 100%;
 		width: 100%;
 	}
 */
+=======
+/* Map */
+#map {
+  height: 420px;
+  width: 640px; }
+
+.map-marker {
+  text-align: center;
+  color: #fff;
+  font-size: 2em; }
+
+>>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 /* Button */
 input[type="submit"],
 input[type="reset"],
