@@ -952,18 +952,39 @@
 		}
 	}
 
-<<<<<<< HEAD
-/* Map 
-	.map {
-		height: 100%;
-		width: 100%;
-	}
-*/
-=======
+
 /* Map */
 	#map {
 		height: 420px;
 		width: 640px;
+		}
+
+	.map-div {
+			justify-content: center;
+		}
+
+
+
+	@include breakpoint('<=medium') {
+		#map {
+			height: 420px;
+			width: 100vw;
+			margin-bottom: 3em;
+		}
+	}
+
+
+	@include breakpoint('<=medium') {
+		#locations {
+			padding: 2em 0 0.1em 0;
+
+			.map-div {
+				margin-left: 0 ;
+			}
+			.restaurants {
+				padding: 0 0 0 0;
+			}
+		}
 	}
 
 	.map-marker {
@@ -971,7 +992,6 @@
 		color: #fff;
 		font-size: 2em;
 	}
->>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 
 /* Button */
 
@@ -1126,7 +1146,7 @@
 
 		.icon {
 			&.major {
-				color: _palette(dark, fg-bold);
+				color: #fff;
 			}
 		}
 	}
@@ -1161,12 +1181,16 @@
 		position: relative;
 		text-align: center;
 
+		@include breakpoint('>medium') {
+			height: 100vh;
+		}
+
 		h1 {
 			margin: 0;
 		}
 
 		p {
-			margin: (_size(element-margin) * 0.5) 0 0 0;
+			margin: (_size(element-margin) * 0.5) 0 2em 0;
 		}
 
 		.actions {

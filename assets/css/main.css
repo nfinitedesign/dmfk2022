@@ -1307,8 +1307,7 @@ input[type="radio"] + label:before {
 .icon {
   text-decoration: none;
   border-bottom: none;
-  position: relative;
-color: #fff; }
+  position: relative; }
   .icon:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -1329,11 +1328,11 @@ color: #fff; }
   .icon.brands:before {
     font-family: 'Font Awesome 5 Brands'; }
   .icon.style1:before {
-    color: #fff; }
+    color: #006466; }
   .icon.style2:before {
-    color: #fff; }
+    color: #065A60; }
   .icon.style3:before {
-    color: #fff; }
+    color: #144552; }
   .icon.style4:before {
     color: #272640; }
   .icon.style5:before {
@@ -1590,25 +1589,31 @@ table {
     table.alt tfoot {
       border-top: 0; }
 
-<<<<<<< HEAD
-/* Map 
-	.map {
-		height: 100%;
-		width: 100%;
-	}
-*/
-=======
 /* Map */
 #map {
   height: 420px;
   width: 640px; }
 
+.map-div {
+  justify-content: center; }
+
+@media screen and (max-width: 980px) {
+  #map {
+    height: 420px;
+    width: 100vw;
+    margin-bottom: 3em; } }
+@media screen and (max-width: 980px) {
+  #locations {
+    padding: 2em 0 0.1em 0; }
+    #locations .map-div {
+      margin-left: 0; }
+    #locations .restaurants {
+      padding: 0 0 0 0; } }
 .map-marker {
   text-align: center;
   color: #fff;
   font-size: 2em; }
 
->>>>>>> 929900cee366f964df309718509e5c8c4583c0eb
 /* Button */
 input[type="submit"],
 input[type="reset"],
@@ -1779,7 +1784,7 @@ button,
     .main.style2 ul.major-icons li .icon {
       border-color: #ffffff; }
     .main.style2 .icon.major {
-      color: #ffffff; }
+      color: #fff; }
 
 /* Header */
 #header {
@@ -1846,11 +1851,14 @@ button,
   #header ul.major-icons li .icon {
     border-color: #ffffff; }
   #header .icon.major {
-    color: #ffffff; }
+    color: #fff; }
+  @media screen and (min-width: 981px) {
+    #header {
+      height: 100vh; } }
   #header h1 {
     margin: 0; }
   #header p {
-    margin: 1em 0 0 0; }
+    margin: 1em 0 2em 0; }
   #header .actions {
     -moz-justify-content: center;
     -webkit-justify-content: center;
@@ -1991,7 +1999,7 @@ body.is-preload #header:after {
   #footer ul.major-icons li .icon {
     border-color: #ffffff; }
   #footer .icon.major {
-    color: #ffffff; }
+    color: #fff; }
   #footer .icons {
     margin: 0; }
   #footer .copyright {
@@ -2185,7 +2193,88 @@ body.is-preload #header:after {
   #footer {
     padding: 2em 1em 2em 1em ; } }
 /* Nav */
-#nav {
+#nav-main {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-transition: -moz-transform 1s ease, opacity 1s ease, background 250ms ease;
+  -webkit-transition: -webkit-transform 1s ease, opacity 1s ease, background 250ms ease;
+  -ms-transition: -ms-transform 1s ease, opacity 1s ease, background 250ms ease;
+  transition: transform 1s ease, opacity 1s ease, background 250ms ease;
+  background: rgba(255, 255, 255, 0);
+  height: 4rem;
+  line-height: 4rem;
+  margin: -4rem auto 0 auto;
+  overflow: hidden;
+  padding: 0 2rem 0 0;
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  justify-content: right;
+  z-index: 3; }
+  #nav-main.alt {
+    background-color: white;
+    box-shadow: 0 0.125rem 0.75rem 0 rgba(77, 25, 77, 0.25);
+    color: #4D194D; }
+    #nav-main.alt:hover {
+      background-color: #fff; }
+  #nav-main ul {
+    justify-content: flex-end; }
+    #nav-main ul.links {
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      -moz-flex-grow: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-grow: 1;
+      flex-grow: 1;
+      -moz-flex-shrink: 1;
+      -webkit-flex-shrink: 1;
+      -ms-flex-shrink: 1;
+      flex-shrink: 1;
+      letter-spacing: 0.075em;
+      list-style: none;
+      margin-bottom: 0;
+      padding-left: 0;
+      text-transform: uppercase; }
+      #nav-main ul.links li {
+        display: block;
+        padding-left: 0; }
+        #nav-main ul.links li a {
+          -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          display: block;
+          font-size: 0.8rem;
+          outline: none;
+          padding: 0 2rem; }
+          #nav-main ul.links li a:hover {
+            color: inherit !important;
+            background-color: rgba(0, 100, 102, 0.1); }
+        #nav-main ul.links li.active {
+          background-color: #4D194D; }
+          #nav-main ul.links li.active a {
+            color: #fff; }
+            #nav-main ul.links li.active a:hover {
+              color: #006466 !important; }
+    #nav-main ul.icons {
+      -moz-flex-grow: 0;
+      -webkit-flex-grow: 0;
+      -ms-flex-grow: 0;
+      flex-grow: 0;
+      -moz-flex-shrink: 0;
+      -webkit-flex-shrink: 0;
+      -ms-flex-shrink: 0;
+      flex-shrink: 0;
+      margin-bottom: 0; }
+  @media screen and (max-width: 980px) {
+    #nav-main {
+      display: none; } }
+
+#nav-sub {
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -2203,7 +2292,7 @@ body.is-preload #header:after {
   position: relative;
   width: 100%;
   z-index: 2; }
-  #nav ul.links {
+  #nav-sub ul.links {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -2221,12 +2310,10 @@ body.is-preload #header:after {
     margin-bottom: 0;
     padding-left: 0;
     text-transform: uppercase; }
-    #nav ul.links li {
+    #nav-sub ul.links li {
       display: block;
-      padding-left: 0;
-      background: #000000AA;
-    color: #fff; }
-      #nav ul.links li a {
+      padding-left: 0; }
+      #nav-sub ul.links li a {
         -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
         -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
         -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2235,16 +2322,16 @@ body.is-preload #header:after {
         font-size: 0.8rem;
         outline: none;
         padding: 0 2rem; }
-        #nav ul.links li a:hover {
+        #nav-sub ul.links li a:hover {
           color: inherit !important;
           background-color: rgba(0, 100, 102, 0.1); }
-      #nav ul.links li.active {
-        background-color: #fff; }
-        #nav ul.links li.active a {
-          color: #000; }
-          #nav ul.links li.active a:hover {
+      #nav-sub ul.links li.active {
+        background-color: #4D194D; }
+        #nav-sub ul.links li.active a {
+          color: #fff; }
+          #nav-sub ul.links li.active a:hover {
             color: #006466 !important; }
-  #nav ul.icons {
+  #nav-sub ul.icons {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
     -ms-flex-grow: 0;
@@ -2255,8 +2342,8 @@ body.is-preload #header:after {
     flex-shrink: 0;
     margin-bottom: 0; }
   @media screen and (max-width: 980px) {
-    #nav {
-      display: none; } }
+    #nav-sub {
+      display: block; } }
 
 /* Nav Panel */
 #navPanelToggle {
@@ -2267,15 +2354,17 @@ body.is-preload #header:after {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   display: none;
   position: fixed;
-  top: 0.75rem;
-  right: 0.75rem;
+  top: 0px;
+  right: px;
+  width: 100%;
   border: 0;
-  color: #4D194D;
-  font-size: 0.9rem;
+  color: #fff;
+  font-size: 1rem;
   letter-spacing: 0.075em;
-  padding: 0.375rem 1.25rem;
+  padding: 1rem 1rem;
   text-transform: uppercase;
-  z-index: 10001; }
+  text-align: right;
+  z-index: 3; }
   #navPanelToggle:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -2292,7 +2381,7 @@ body.is-preload #header:after {
     margin-right: 0.5rem; }
   #navPanelToggle.alt {
     background-color: #fff;
-    box-shadow: 0 0.125rem 0.75rem 0 rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0.125rem 0.75rem 0 rgba(77, 25, 77, 0.25);
     color: #4D194D; }
     #navPanelToggle.alt:hover {
       background-color: #fff; }
@@ -2301,8 +2390,8 @@ body.is-preload #header:after {
       display: block; } }
   @media screen and (max-width: 736px) {
     #navPanelToggle {
-      font-size: 0.8rem;
-      padding: 0.25rem 1rem; } }
+      font-size: 1.2rem;
+      padding: 1rem 1rem; } }
 
 #navPanel {
   -moz-transform: translateX(20rem);

@@ -6,7 +6,98 @@
 
 /* Nav */
 
-	#nav {
+	#nav-main {
+		@include vendor('display', 'flex');
+		@include vendor('transition', (
+			'transform 1s ease',
+			'opacity 1s ease',
+			'background 250ms ease'
+		));
+		background: rgba(255,255,255,0);
+		height: 4rem;
+		line-height: 4rem;
+		margin: -4rem auto 0 auto;
+		overflow: hidden;
+		padding: 0 2rem 0 0;
+		position: sticky;
+		top: 0px;
+		right: 0px;
+		justify-content: right;
+		max-width: _size(wrapper);
+		z-index: 3;
+
+		&.alt {
+			background-color: rgba(255,255,255,1);;
+			box-shadow: 0 0.125rem 0.75rem 0 transparentize(_palette(fg-bold), 0.75);
+			color: _palette(fg-bold);
+
+			&:hover {
+				background-color: _palette(bg);
+			}
+		}
+
+		ul {
+			justify-content: flex-end;
+			&.links {
+				@include vendor('display', 'flex');
+				@include vendor('flex-grow', '1');
+				@include vendor('flex-shrink', '1');
+				font-family: _font(family-heading);
+				font-weight: _font(weight-heading);
+				letter-spacing: 0.075em;
+				list-style: none;
+				margin-bottom: 0;
+				padding-left: 0;
+				text-transform: uppercase;
+
+				li {
+					display: block;
+					padding-left: 0;
+
+					a {
+						@include vendor('transition', (
+							'background-color #{_duration(transition)} ease-in-out',
+							'color #{_duration(transition)} ease-in-out'
+						));
+						display: block;
+						font-size: 0.8rem;
+						outline: none;
+						padding: 0 2rem;
+
+						&:hover {
+							color: inherit !important;
+							background-color: transparentize(_palette(fg), 0.9);
+						}
+					}
+
+					&.active {
+						background-color: _palette(fg-bold);
+
+						a {
+							color: _palette(bg);
+
+							&:hover {
+								color: _palette(accent1) !important;
+							}
+						}
+					}
+				}
+			}
+
+			&.icons {
+				@include vendor('flex-grow', '0');
+				@include vendor('flex-shrink', '0');
+				margin-bottom: 0;
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			display: none;
+		}
+	}
+
+
+	#nav-sub {
 		@include vendor('display', 'flex');
 		@include vendor('transition', (
 			'transform 1s ease',
@@ -78,6 +169,6 @@
 		}
 
 		@include breakpoint('<=medium') {
-			display: none;
+			display: block;
 		}
 	}

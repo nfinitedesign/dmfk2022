@@ -9,7 +9,7 @@
 	var	$window = $(window),
 		$body = $('body'),
 		$header = $('#header'),
-		$nav = $('#nav'),
+		$nav = $('#nav-main'),
 		$navPanelToggle, $navPanel, $navPanelInner;
 
 	// Breakpoints.
@@ -39,27 +39,29 @@
 			$navPanelToggle = $(
 				'<a href="#navPanel" id="navPanelToggle">Menu</a>'
 			)
-				.appendTo($body);
+			.appendTo($body);
 
-			// Change toggle styling once we've scrolled past the header.
-				$header.scrollex({
-					bottom: '5vh',
-					enter: function() {
-						$navPanelToggle.removeClass('alt');
-					},
-					leave: function() {
-						$navPanelToggle.addClass('alt');
-					}
-				});
+		// Change toggle styling once we've scrolled past the header.
+			$header.scrollex({
+				bottom: '8vh',
+				enter: function() {
+					$navPanelToggle.removeClass('alt');
+					$nav.removeClass('alt');
+				},
+				leave: function() {
+					$navPanelToggle.addClass('alt');
+					$nav.addClass('alt');
+				}
+			});
 
 		// Panel.
 			$navPanel = $(
-				'<div id="navPanel">' +
-					'<nav>' +
-					'</nav>' +
-					'<a href="#navPanel" class="close"></a>' +
-				'</div>'
-			)
+					'<div id="navPanel">' +
+						'<nav>' +
+						'</nav>' +
+						'<a href="#navPanel" class="close"></a>' +
+					'</div>'
+				)
 				.appendTo($body)
 				.panel({
 					delay: 500,

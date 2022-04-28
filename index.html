@@ -18,31 +18,41 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<img src="images/logo.png">
-					<h1> <strong>Deutsche Meisterschaft der Fahrradkurier*innen</strong></h1>
-					<p>Wir hoffen Ihr seid das warten satt und es hat sich eine geballte Ladung an Hunger bei euch angestaut, <br />
-					 	denn wir, die Freiburger Fahrrad und Kurier Kru e.V., laden ein zum <b>D</b>inner <b>M</b>it <b>F</b>reiburgs <b>K</b>urier*innen. <br />
-						Mit geschmorten Reifen, Schweißperlen und Alleycats zum Frühstück werden wir eure Beine und Knie mit einem <br />
-				 	 	vier Gänge Menü über das <strong>Wochenende vom 07-10. Juli</strong> zum Glühen bringen. More information coming soon...</p>
-				</div>
-			</section>
-
-
-	<!-- Nav -->
-		<nav id="nav">
+	<!-- Main Nav -->
+		<nav id="nav-main">
 			<ul class="links">
-				<li class="active"><a href="index.html">This is Massively</a></li>
+				<li class="active"><a href="index.html">MAIN</a></li>
 				<li><a href="generic.html">Generic Page</a></li>
 				<li><a href="elements.html">Elements Reference</a></li>
 			</ul>
+		</nav>
+
+	<!-- Header -->
+		<section id="header">
+			<div class="inner">
+				<img src="images/logo.png">
+				<h1> <strong>Deutsche Meisterschaft der Fahrradkurier*innen</strong></h1>
+				<p>Wir hoffen Ihr seid das warten satt und es hat sich eine geballte Ladung an Hunger bei euch angestaut, <br />
+				 	denn wir, die Freiburger Fahrrad und Kurier Kru e.V., laden ein zum <b>D</b>inner <b>M</b>it <b>F</b>reiburgs <b>K</b>urier*innen. <br />
+					Wir servieren Schweißperlen an geschmorten Reifen, Wadenfrikassee mit Kettenöl-Ritzelsalat im Rahmen <br />
+			 	 	unseres vier Gänge Menüs <strong>vom 07-10. Juli</strong>: und Sonntag wird klar sein, wer die und der gewiefteste Kilometer-Fresser*in des Landes ist.</p>
+			</div>
+		</section>
+
+
+	<!-- Sub Nav -->
+		<nav id="nav-sub">
+			<ul class="links">
+				<li class="active"><a href="index.html">Info</a></li>
+				<li><a href="generic.html">Generic</a></li>
+				<li><a href="elements.html">Reference</a></li>
+				<li><a href="elements.html">Elements</a></li>
+			</ul>
 			<ul class="icons">
-				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="http://www.fkk-freiburg.org/" class="icon solid fa fa-globe"><span class="label">Website</span></a></li>
+				<li><a href="https://www.facebook.com/fahrradkurierkumpel" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/dmfk.2022/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="mailto:kontakt@dmfk2022.de" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 		</nav>
 
@@ -51,7 +61,7 @@
 				<div class="container">
 					<header class="major">
 						<h1>Timetable</h1>
-						<p>Das wichtigste zuerst, wann und wo gibt's was zu essen?</p>
+						<p>Was gibts wann und wo zu essen?</p>
 					</header>
 					<header>
 						<h2>Aperitif</h2>
@@ -356,10 +366,10 @@
 				<div class="container">
 					<header class="major">
 						<h1>Locations</h1>
-						<p>Hier findest du hauptsächlich ESSEN, aber auch alles andere.</p>
+						<p>Wo wird was serviert?</p>
 					</header>
-					<div class="row gtr-150">
-						<div id="map" class="col-8 col-12-medium"></div>
+					<div class="row gtr-150 map-div">
+						<div id="map"></div>
 						<script>
 							const accessToken = 'bD7NMBQtwdNDTngF9xcXUMoMKYY4E1vWsXAr1eQq9tJQpfhwuy2lD0KqS41V11Yu';
 							const styleId = '10e5778f-1b2e-4c03-abcb-ff434a5be1fb';
@@ -419,7 +429,7 @@
 							});
 						</script>
 
-						<div class="col-4 col-12-medium">
+						<div class="restaurants">
 							<h3>Restaurants</h3>
 							<ol>
 								<li>Main Race HQ </br><sup>Zentrum Oberwiehre</sup></li>
