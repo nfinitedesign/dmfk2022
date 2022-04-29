@@ -877,6 +877,36 @@
 		}
 	}
 
+/* Minor Icons */
+	.minor-icons {
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			display: inline-block;
+			padding: 2.5em;
+			text-align: center;
+
+			.icon {
+				@include vendor('transform', 'rotate(45deg)');
+				border-radius: _size(border-radius);
+				border: solid 1px _palette(border);
+				display: inline-block;
+				height: 8em;
+				line-height: 8em;
+				margin: 0;
+				text-align: center;
+				width: 8em;
+
+				&:before {
+					@include vendor('transform', 'rotate(-45deg)');
+					display: inline-block;
+					line-height: inherit;
+				}
+			}
+		}
+	}
+
 /* Table */
 
 	.table-wrapper {
@@ -957,11 +987,11 @@
 	#map {
 		height: 420px;
 		width: 640px;
-		}
+	}
 
 	.map-div {
-			justify-content: center;
-		}
+		justify-content: center;
+	}
 
 
 
@@ -981,6 +1011,7 @@
 			.map-div {
 				margin-left: 0 ;
 			}
+			
 			.restaurants {
 				padding: 0 0 0 0;
 			}

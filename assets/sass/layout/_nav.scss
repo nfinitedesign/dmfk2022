@@ -169,6 +169,6 @@
 		}
 
 		@include breakpoint('<=medium') {
-			display: block;
+			display: none;
 		}
 	}
