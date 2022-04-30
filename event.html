@@ -1,0 +1,476 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>DMFK 2022 Freiburg</title>
+		<meta name="description" content="Die Deutsche Meisterschaft der Fahrradkuriere und Fahrradkurierinnen (DMFK) findet 2022 in Freiburg im Breisgau statt und wird von der Fahrrad und Kurier Kru Freiburg e.V. gehostet.
+										  The German Cycle Messenger Championships are happening 2022 in Freiburg im Breisgau and are hosted by the Fahrrad und Kurier Kru Freiburg e.V..">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet" />
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	</head>
+	<body class="is-preload">
+
+	<!-- Main Nav -->
+		<nav id="nav-main">
+			<ul class="links">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="event.html">Event</a></li>
+				<li><a href="info.html">Info</a></li>
+				<li><a href="info.html">Kontakt</a></li>
+			</ul>
+		</nav>
+
+	<!-- Main mobile -->
+		<div id="navPanel" data-role="panel">
+			<nav>
+				<ul class="links">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li class="small"><a href="https://pretix.eisxzeit.uber.space/FKK/DMFK/">Anmeldung</a></li>
+					<li><a href="event.html">Event</a></li>
+					<li class="small"><a href="event.html#timetable">Timetable</a></li>
+					<li class="small"><a href="event.html#locations">Locations</a></li>
+					<li class="small"><a href="event.html#about">Gänge</a></li>
+					<li><a href="info.html">Info</a></li>
+					<li class="small"><a href="info.html#awareness">Awareness</a></li>
+					<li class="small"><a href="info.html#housing">Housing</a></li>
+					<li class="small"><a href="info.html#volunteer">Volunteering</a></li>
+					<li class="small"><a href="info.html#covid19">Covid 19</a></li>
+					<li><a href="info.html#kontakt">Kontakt</a></li>
+				</ul>
+			</nav>
+			<a href="#navPanel" class="close"></a>
+		</div>
+
+	<!-- Header -->
+		<section id="header" class=small>
+			<div class="inner">
+				<img src="images/logo-header-small.png">
+			</div>
+		</section>
+
+
+	<!-- Sub Nav -->
+		<nav id="nav-sub">
+			<ul class="links">
+				<li><a href="#timetable">Timetable</a></li>
+				<li><a href="#locations">Locations</a></li>
+				<li><a href="#about">Gänge</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="http://www.fkk-freiburg.org/" class="icon solid fa fa-globe"><span class="label">Website</span></a></li>
+				<li><a href="https://www.facebook.com/fahrradkurierkumpel" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/dmfk.2022/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="mailto:kontakt@dmfk2022.de" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Anmeldung Teaser -->
+			<section id="anmeldung" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Hunger? Dann ab zur Tischreservierung!</h2>
+						<p>Hier geht's direkt zur Anmeldung und Liste unserer Gäste.</p>
+					</header>
+					<ul class="actions special">
+						<li><a href="https://pretix.eisxzeit.uber.space/FKK/DMFK/" class="button wide primary"  target="_blank">Tickets</a></li>
+						<li><a href="#" class="button wide">Gästeliste</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Timetable -->
+			<section id="timetable" class="main style2 special">
+				<div class="container">
+					<header class="major">
+						<h1>Timetable</h1>
+						<p>Was gibts wann und wo zu essen?</p>
+					</header>
+					<header>
+						<h2>Aperitif</h2>
+						<p>Donnerstag</p>
+					</header>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th width="25%">Uhrzeit</th>
+									<th width="45%">Event</th>
+									<th width="30%">Location</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>16:00 - 21:00</td>
+									<td>Anmeldung</td>
+									<td>Schattenparker</td>
+								</tr>
+								<tr>
+									<td>17:00</td>
+									<td>Ankunft Groupride</td>
+									<td>Schattenparker</td>
+								</tr>
+								<tr>
+									<td>19:00 - 21:00</td>
+									<td>Alleyperitif</td>
+									<td>Start: Schattenparker</td>
+								</tr>
+								<tr>
+									<td>21:00</td>
+									<td>Abendessen</td>
+									<td>Schattenparker</td>
+								</tr>
+								<tr>
+									<td>21:30 - Open End</td>
+									<td>Bands: Basken Punk, Das Blanke Extrem<br>Party: DnB, DJs</td>
+									<td>Schattenparker</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<header>
+						<h2>Vorspeise</h2>
+						<p>Freitag</p>
+					</header>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th width="25%">Uhrzeit</th>
+									<th width="45%">Event</th>
+									<th width="30%">Location</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>11:00 - 13:00</td>
+									<td>Anmeldung + Frühstück</td>
+									<td>SUSI Café</td>
+								</tr>
+								<tr>
+									<td>14:00 - 16:00</td>
+									<td>Ausfahrt/Groupride</td>
+									<td>Start @ SUSI Café</td>
+								</tr>
+								<tr>
+									<td>17:00 - 18:30</td>
+									<td>Bergsprint</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>20:00 - 22:30</td>
+									<td>Goldsprint</td>
+									<td>Kollnau?</td>
+								</tr>
+								<tr>
+									<td>23:00 - Open End</td>
+									<td>Party</td>
+									<td>Kollnau?</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<header>
+						<h2>Zwischengang</h2>
+						<p>Samstag</p>
+					</header>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th width="25%">Uhrzeit</th>
+									<th width="45%">Event</th>
+									<th width="30%">Location</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>9:00 - 11:00</td>
+									<td>Frühstück</td>
+									<td>Mainrace Gelände</td>
+								</tr>
+								<tr>
+									<td>10:00 - 15:00</td>
+									<td>Main Race: Qualifikation</td>
+									<td>Mainrace Gelände</td>
+								</tr>
+								<tr>
+									<td>16:00 - 17:30</td>
+									<td>Skid, Sprint, Footdown</td>
+									<td>Mainrace Gelände</td>
+								</tr>
+								<tr>
+									<td>17:30 - 18:30</td>
+									<td>Open Forum</td>
+									<td>Mainrace Gelände</td>
+								</tr>
+								<tr>
+									<td>20:00 - 22:00</td>
+									<td>Soup de Sweat</td>
+									<td>Start @ Mainrace Gelände</td>
+								</tr>
+								<tr>
+									<td>22:00 - 23:00</td>
+									<td>Dinner</td>
+									<td>Partylocation</td>
+								</tr>
+								<tr>
+									<td>23:00 - Open End</td>
+									<td>Party</td>
+									<td>Partylocation</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<header>
+						<h2>Hauptgericht</h2>
+						<p>Sonntag</p>
+					</header>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th width="25%">Uhrzeit</th>
+									<th width="45%">Event</th>
+									<th width="30%">Location</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>9:00 - 11:00</td>
+									<td>Frühstück</td>
+									<td>Mainrace Gelände</td>
+								</tr>
+								<tr>
+									<td>10:00 - 12:30</td>
+									<td>Main Race: Cargo</td>
+									<td>Mainrace Gelände</td>
+								</tr>
+								<tr>
+									<td>13:00 - 16:30</td>
+									<td>Main Race: Finale</td>
+									<td>Mainrace Gelände</td>
+								</tr>
+								<tr>
+									<td>18:00 - 19:00</td>
+									<td>Sieger*innenehrung</td>
+									<td>Mainrace Gelände</td>
+								</tr>
+								<tr>
+									<td>20:00 - Open End</td>
+									<td>Afterparty/Chillout</td>
+									<td>Kollnau?</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<header>
+						<h2>Dessert</h2>
+						<p>Montag</p>
+					</header>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th width="25%">Uhrzeit</th>
+									<th width="45%">Event</th>
+									<th width="30%">Location</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>9:00 - 11:00</td>
+									<td>Frühstück</td>
+									<td>Draussen</td>
+								</tr>
+								<tr>
+									<td>12:00 - Open End</td>
+									<td>Mystery Tour</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+
+		<!-- Locations -->
+			<section id="locations" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h1>Locations</h1>
+						<p>Wo wird was serviert?</p>
+					</header>
+					<div class="row gtr-150 map-div">
+						<div id="map"></div>
+						<script>
+							const accessToken = 'bD7NMBQtwdNDTngF9xcXUMoMKYY4E1vWsXAr1eQq9tJQpfhwuy2lD0KqS41V11Yu';
+							const styleId = '10e5778f-1b2e-4c03-abcb-ff434a5be1fb';
+							const map = L.map('map').setView([47.99231643459227, 7.83869371463104], 14);
+							L.tileLayer(
+								`https://tile.jawg.io/${styleId}/{z}/{x}/{y}.png?access-token=${accessToken}`, {
+								attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank" class="jawg-attrib">&copy; <b>Jawg</b>Maps</a> | <a href="https://www.openstreetmap.org/copyright" title="OpenStreetMap is open data licensed under ODbL" target="_blank" class="osm-attrib">&copy; OSM contributors</a>',
+								maxZoom: 17,
+								minZoom: 12
+								}
+							).addTo(map);
+
+							var data = [{
+							"latitud": 47.99024655885035, 
+							"longitud": 7.876626614847946,
+							"name": "Housing"
+							}, {
+							"latitud": 47.97452301521526, 
+							"longitud": 7.828171830594039,
+							"name": "Main Race HQ"
+							},
+							{
+							"latitud": 47.98593936779385, 
+							"longitud": 7.8309651780539085,
+							"name": "Party"
+							},
+							{
+							"latitud": 47.987364064761735, 
+							"longitud": 7.873320586214088,
+							"name": "Anmeldung Donnerstag"
+							},]
+
+							var jsonFeatures = [];
+
+							data.forEach(function(point, index){
+								var lat = point.latitud;
+								var lon = point.longitud;
+								var markerIndex= index + 1;
+								var titleString = markerIndex.toString() + ": " + point.name;
+								var markerOptions = {
+									title: titleString,
+									alt: titleString,
+									clickable: true,
+									draggable: false,
+									opacity: 0.5,
+									icon: L.divIcon({
+										iconUrl: 'https://www.jawg.io/docs/images/icons/eiffel-tower.png',
+										iconSize: [50, 50],
+										html: '<i class="map-marker fa-solid fa-' + markerIndex.toString() + '"></i>',
+										className: 'map-marker'
+									})
+								};
+									
+								var marker = new L.marker([lat, lon], markerOptions);
+								marker.bindTooltip(titleString, {permanent: false, className: "my-label", offset: [5, 0] });
+								marker.addTo(map);
+							});
+						</script>
+
+						<div class="restaurants">
+							<h3>Restaurants</h3>
+							<ol>
+								<li>Main Race HQ </br><sup>Zentrum Oberwiehre</sup></li>
+								<li>Anmeldung Donnerstag </br><sup>SUSI Café, Vaubanallee 2</sup></li>
+								<li>Anmeldung Freitag</li>
+								<li>Anmeldung Samstag</li>
+								<li>Housing</li>
+								<li>Party Donnerstag</li>
+								<li>Party Freitag</li>
+								<li>Party Samstag</li>
+								<li>Afterparty Sonntag</li>
+								<li>Bergsprint</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- About -->
+			<section id="about" class="main style2">
+				<div class="container">
+					<header class="major">
+						<h2>Gänge</h2>
+						<p>Die folgenden Disziplinen werden angeboten</p>
+					</header>
+					<div class="row gtr-150">
+						<div class="col-4 col-12-medium">
+							<ul class="major-icons">
+								<li><span class="icon solid style1 major fa-flag-checkered"></span></li>
+							</ul>
+						</div>
+						<div class="col-8 col-12-medium">
+							<h4>Main Race</h4>
+							<p>Das Main Race ist der Hauptgang einer jeden Fahrradkurier*innen-Meisterschaft, hier werden die und der gewiefteste und schnellste gesucht. Meister*in wird, wer auf einem abgesperrten Einbahnstrassen-Parkour die Manifeste am schnellsten erledigt. Ein Manifest enthält verschiedenste Jobs, in denen Checkpoints auf der Strecke in festgelegten Reihenfolgen angefahren werden müssen. Wie im echten Kurieralltag kommt es nicht nur auf die Geschwindigkeit an, sondern insbesondere darauf wie man die Jobs am effektivsten kombiniert und einen kühlen Kopf bewahrt.</p>
+							<h4>Cargo Race</h4>
+							<p>Gleiches Format wie beim Main Race, allerdings mit Cargo-Rädern. Jeder kann teilnehmen, aber ohne Lastenrad wird's schwierig, denn es gibt Paletten, Kartons, Autoreifen und anderes Sperrgut zu transportieren.</p>
+							<h4>Bergsprint</h4>
+							<p>Beim Bergsprint geht's bergauf: hoch oben auf dem Berg gibt's das kühlste Bier. In Gruppen wird hoch gesprintet. Die schnellsten kommen weiter in die nächste Runde, ein Ausscheidungsrennen bis zum Gipfel.</p>
+							<h4>Goldsprint</h4>
+							<p></p>
+							<h4>Skids</h4>
+							<p></p>
+							<h4>Sprints</h4>
+							<p></p>
+							<h4>Foot-Down</h4>
+							<p></p>
+							<h4>Trackstand</h4>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Sponsoren -->
+			<section id="sponsoren" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h1>Sponsoren</h1>
+						<p>Wir danken unseren großartigen Unterstützern!</p>
+					</header>
+					<div class="col-6 col-12-medium">
+						<ul class="icons">
+							<li><span class="image fixed"><img src="images/black-sqoke-collective-st-pauli.png"></span></li>
+							<li><span class="image fixed"><img src="images/crow-kurierdienst.png"></span></li>
+							<li><span class="image fixed"><img src="images/ffm-ev.png"></span></li>
+							<li><span class="image fixed"><img src="images/black-sqoke-collective-st-pauli.png"></span></li>
+							<li><span class="image fixed"><img src="images/logo-sore-bikes.png"></span></li>
+							<li><span class="image fixed"><img src="images/crow-kurierdienst.png"></span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="http://www.fkk-freiburg.org/" class="icon solid fa fa-globe"><span class="label">Website</span></a></li>
+					<li><a href="https://www.facebook.com/fahrradkurierkumpel" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/dmfk.2022/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="mailto:kontakt@dmfk2022.de" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; 2022 Fahrrad und Kurier Kru Freiburg e.V.</li>
+					<li><a href="#TODO">Impressum</a></li>
+					<li><a href="#TODO">Datenschutz</a></li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

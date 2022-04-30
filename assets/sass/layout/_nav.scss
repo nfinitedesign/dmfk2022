@@ -18,7 +18,7 @@
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
-		padding: 0 2rem 0 0;
+		padding: 0;
 		position: sticky;
 		top: 0px;
 		right: 0px;
@@ -28,11 +28,20 @@
 
 		&.alt {
 			background-color: rgba(255,255,255,1);;
-			box-shadow: 0 0.125rem 0.75rem 0 transparentize(_palette(fg-bold), 0.75);
-			color: _palette(fg-bold);
+			box-shadow: 0 0.125rem 0.75rem 0 transparentize(_palette(fg-bold), 0.75);			
 
-			&:hover {
-				background-color: _palette(bg);
+			ul {
+				&.links {
+					li {
+						a {
+							color: _palette(accent1);
+
+							&:hover {
+								background-color: _palette(fg-bold);
+							}
+						}
+					}
+				}
 			}
 		}
 
@@ -60,13 +69,15 @@
 							'color #{_duration(transition)} ease-in-out'
 						));
 						display: block;
-						font-size: 0.8rem;
+						font-size: 1rem;
+						font-weight: bold;
 						outline: none;
 						padding: 0 2rem;
+						color: #fff;
 
 						&:hover {
-							color: inherit !important;
-							background-color: transparentize(_palette(fg), 0.9);
+							color: #fff;
+							background-color: _palette(fg-bold);
 						}
 					}
 
@@ -75,10 +86,6 @@
 
 						a {
 							color: _palette(bg);
-
-							&:hover {
-								color: _palette(accent1) !important;
-							}
 						}
 					}
 				}
@@ -103,10 +110,10 @@
 			'transform 1s ease',
 			'opacity 1s ease'
 		));
-		background: rgba(255,255,255,0.175);
-		height: 4rem;
-		line-height: 4rem;
-		margin: -4rem auto 0 auto;
+		background: rgba(255,255,255,1);
+		height: 3rem;
+		line-height: 3rem;
+		margin: -3rem auto 0 auto;
 		overflow: hidden;
 		padding: 0 2rem 0 0;
 		position: relative;
@@ -138,24 +145,13 @@
 						));
 						display: block;
 						font-size: 0.8rem;
+						font-weight: bold;
 						outline: none;
 						padding: 0 2rem;
 
 						&:hover {
-							color: inherit !important;
-							background-color: transparentize(_palette(fg), 0.9);
-						}
-					}
-
-					&.active {
-						background-color: _palette(fg-bold);
-
-						a {
-							color: _palette(bg);
-
-							&:hover {
-								color: _palette(accent1) !important;
-							}
+							color: #fff;
+							background-color: _palette(fg-bold);
 						}
 					}
 				}

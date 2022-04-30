@@ -832,7 +832,7 @@
 		li {
 			display: inline-block;
 			padding: 0 1.25em 0 0;
-			vertical-align: top;
+			vertical-align: center;
 
 			&:last-child {
 				padding-right: 0;
@@ -1011,7 +1011,7 @@
 			.map-div {
 				margin-left: 0 ;
 			}
-			
+
 			.restaurants {
 				padding: 0 0 0 0;
 			}
@@ -1212,6 +1212,12 @@
 		position: relative;
 		text-align: center;
 
+		&.small {
+			height: 20vh;
+			text-align: left;
+			padding: 0em 2em 0em 10em;
+		}
+
 		@include breakpoint('>medium') {
 			height: 100vh;
 		}
@@ -1222,29 +1228,6 @@
 
 		p {
 			margin: (_size(element-margin) * 0.5) 0 2em 0;
-		}
-
-		.actions {
-			@include vendor('justify-content', 'center');
-			margin-top: (_size(element-margin) * 1.25);
-			margin-left: 0;
-			position: relative;
-
-			li {
-				&:first-child {
-					padding-left: 0;
-				}
-			}
-
-			&:after {
-				background: _palette(dark, border);
-				content: '';
-				height: 100vh;
-				left: 50%;
-				position: absolute;
-				top: 100%;
-				width: 1px;
-			}
 		}
 
 		.inner {
@@ -1633,7 +1616,6 @@
 			}
 
 	}
-
 
 	@import 'layout/nav';
 	@import 'layout/navPanel';
