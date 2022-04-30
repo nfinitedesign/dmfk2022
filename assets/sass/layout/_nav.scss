@@ -28,7 +28,7 @@
 
 		&.alt {
 			background-color: rgba(255,255,255,1);;
-			box-shadow: 0 0.125rem 0.75rem 0 transparentize(_palette(fg-bold), 0.75);			
+			box-shadow: 0 0.25rem 0.75rem 0 transparentize(_palette(fg-bold), 0.75);			
 
 			ul {
 				&.links {
@@ -52,7 +52,6 @@
 				@include vendor('flex-grow', '1');
 				@include vendor('flex-shrink', '1');
 				font-family: _font(family-heading);
-				font-weight: _font(weight-heading);
 				letter-spacing: 0.075em;
 				list-style: none;
 				margin-bottom: 0;
@@ -77,12 +76,12 @@
 
 						&:hover {
 							color: #fff;
-							background-color: _palette(fg-bold);
+							background-color: transparentize(_palette(accent6), 0.1);
 						}
 					}
 
 					&.active {
-						background-color: _palette(fg-bold);
+						background-color: transparentize(_palette(accent6), 0.1);
 
 						a {
 							color: _palette(bg);
@@ -127,7 +126,6 @@
 				@include vendor('flex-grow', '1');
 				@include vendor('flex-shrink', '1');
 				font-family: _font(family-heading);
-				font-weight: _font(weight-heading);
 				letter-spacing: 0.075em;
 				list-style: none;
 				margin-bottom: 0;

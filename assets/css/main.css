@@ -1393,6 +1393,12 @@ input[type="radio"] + label:before {
     width: 8em; }
     .image.fixed img {
       width: 8em; }
+  .image.sponsors {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 16em; }
+    .image.sponsors img {
+      width: 15em; }
 
 /* List */
 ol {
@@ -1520,7 +1526,6 @@ ul.icons {
     ul.icons li .icon:before {
       font-size: 1.5em; }
 
-/* Major Icons */
 ul.major-icons {
   list-style: none;
   padding-left: 0; }
@@ -1549,7 +1554,6 @@ ul.major-icons {
         display: inline-block;
         line-height: inherit; }
 
-/* Minor Icons */
 .minor-icons {
   list-style: none;
   padding-left: 0; }
@@ -1757,9 +1761,10 @@ button,
   .main.style2 {
     background-color: #333;
     color: rgba(255, 255, 255, 0.75);
-    background-attachment: fixed,							fixed;
-    background-image: url("images/overlay1.png"), url("../../images/header.jpg");
-    background-size: auto,							cover; }
+    background-attachment: fixed;
+    background-image: url("../../images/content-bg.jpg");
+    background-position: 0px 0px;
+    background-size: cover; }
     .main.style2 a {
       border-bottom-color: rgba(255, 255, 255, 0.5); }
       .main.style2 a:hover {
@@ -1820,10 +1825,10 @@ button,
   padding: 9em 0 9em 0 ;
   background-color: #4686a0;
   color: rgba(255, 255, 255, 0.75);
-  background-attachment: fixed,							fixed,							fixed;
-  background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #212F45 5%, #312244 30%, #006466);
-  background-position: top left,						center center,					center center;
-  background-size: auto,							cover,							cover;
+  background-attachment: fixed;
+  background-image: url("../../images/header.jpg");
+  background-position: 0px -1px;
+  background-size: cover;
   overflow: hidden;
   position: relative;
   text-align: center; }
@@ -1882,9 +1887,12 @@ button,
   #header .icon.major {
     color: #fff; }
   #header.small {
-    height: 20vh;
-    text-align: left;
-    padding: 0em 2em 0em 10em; }
+    height: 18vh;
+    text-align: center;
+    padding: 1.5em; }
+    @media screen and (max-width: 980px) {
+      #header.small {
+        height: 10vh; } }
   @media screen and (min-width: 981px) {
     #header {
       height: 100vh; } }
@@ -1893,10 +1901,10 @@ button,
   #header p {
     margin: 1em 0 2em 0; }
   #header .inner {
-    -moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
-    -webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
-    -ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
-    transition: transform 1.5s ease, opacity 2s ease;
+    -moz-transition: -moz-transform 0.5s ease, opacity 0.25s ease;
+    -webkit-transition: -webkit-transform 0.5s ease, opacity 0.25s ease;
+    -ms-transition: -ms-transform 0.5s ease, opacity 0.25s ease;
+    transition: transform 0.5s ease, opacity 0.25s ease;
     -moz-transition-delay: 0.25s;
     -webkit-transition-delay: 0.25s;
     -ms-transition-delay: 0.25s;
@@ -1908,20 +1916,18 @@ button,
     opacity: 1;
     position: relative;
     z-index: 1; }
-    #header .inner .actions {
-      -moz-transition: -moz-transform 1.25s ease;
-      -webkit-transition: -webkit-transform 1.25s ease;
-      -ms-transition: -ms-transform 1.25s ease;
-      transition: transform 1.25s ease;
-      -moz-transition-delay: 1s;
-      -webkit-transition-delay: 1s;
-      -ms-transition-delay: 1s;
-      transition-delay: 1s;
-      -moz-transform: translateY(0);
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-      opacity: 1; }
+    #header .inner .logo-main {
+      height: 50vh; }
+      @media screen and (max-width: 980px) {
+        #header .inner .logo-main {
+          height: auto;
+          width: 80vw; } }
+    #header .inner .logo-small {
+      height: 12vh; }
+      @media screen and (max-width: 980px) {
+        #header .inner .logo-small {
+          height: auto;
+          width: 80vw; } }
   #header:after {
     -moz-transition: opacity 1s ease;
     -webkit-transition: opacity 1s ease;
@@ -1956,10 +1962,10 @@ body.is-preload #header:after {
   padding: 6em 0 6em 0 ;
   background-color: #4686a0;
   color: rgba(255, 255, 255, 0.75);
-  background-attachment: fixed,							fixed,							fixed;
-  background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #006466, #312244 50%, #212F45 95%);
-  background-position: top left,						center center,					center center;
-  background-size: auto,							cover,							cover;
+  background-attachment: fixed;
+  background-image: url("../../images/header.jpg");
+  background-position: 0px 0px;
+  background-size: cover;
   text-align: center; }
   #footer a {
     border-bottom-color: rgba(255, 255, 255, 0.5); }
@@ -2230,7 +2236,7 @@ body.is-preload #header:after {
   z-index: 3; }
   #nav-main.alt {
     background-color: white;
-    box-shadow: 0 0.125rem 0.75rem 0 rgba(77, 25, 77, 0.25); }
+    box-shadow: 0 0.25rem 0.75rem 0 rgba(77, 25, 77, 0.25); }
     #nav-main.alt ul.links li a {
       color: #006466; }
       #nav-main.alt ul.links li a:hover {
@@ -2271,9 +2277,9 @@ body.is-preload #header:after {
           color: #fff; }
           #nav-main ul.links li a:hover {
             color: #fff;
-            background-color: #4D194D; }
+            background-color: rgba(77, 25, 77, 0.9); }
         #nav-main ul.links li.active {
-          background-color: #4D194D; }
+          background-color: rgba(77, 25, 77, 0.9); }
           #nav-main ul.links li.active a {
             color: #fff; }
     #nav-main ul.icons {
@@ -2371,6 +2377,7 @@ body.is-preload #header:after {
   border: 0;
   color: #fff;
   font-size: 1rem;
+  font-weight: bold;
   letter-spacing: 0.075em;
   padding: 1rem 1rem;
   text-transform: uppercase;
@@ -2437,6 +2444,7 @@ body.is-preload #header:after {
         border-bottom: 0;
         display: block;
         font-size: 0.9rem;
+        font-weight: bold;
         letter-spacing: 0.075em;
         padding: 0.75rem 0;
         text-transform: uppercase; }

@@ -683,6 +683,16 @@
 				width: 8em;
 			}
 		}
+
+		&.sponsors {
+			display: block;
+			margin: 0 0 _size(element-margin) 0;
+			width: 16em;
+
+			img {
+				width: 15em;
+			}
+		}
 	}
 
 /* List */
@@ -846,8 +856,6 @@
 		}
 	}
 
-/* Major Icons */
-
 	ul.major-icons {
 		list-style: none;
 		padding-left: 0;
@@ -877,7 +885,6 @@
 		}
 	}
 
-/* Minor Icons */
 	.minor-icons {
 		list-style: none;
 		padding-left: 0;
@@ -1193,9 +1200,10 @@
 
 		&.style2 {
 			@include dark(#333);
-			background-attachment:	fixed,							fixed;
-			background-image:		url('images/overlay1.png'),		url('../../images/header.jpg');
-			background-size:		auto,							cover;
+			background-attachment:	fixed;
+			background-image:		url('../../images/content-bg.jpg');
+			background-position:	0px 0px;
+			background-size:		cover;
 		}
 	}
 
@@ -1204,18 +1212,22 @@
 	#header {
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
 		@include dark(#4686a0);
-		background-attachment:	fixed,							fixed,							fixed;
-		background-image:		url('images/overlay2.png'),		url('images/overlay3.svg'),		linear-gradient(45deg, _palette(accent1-alt) 5%, _palette(accent3-alt) 30%, _palette(accent6-alt));
-		background-position:	top left,						center center,					center center;
-		background-size:		auto,							cover,							cover;
+		background-attachment:	fixed;
+		background-image:		url('../../images/header.jpg');
+		background-position:	0px -1px;
+		background-size:		cover;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
 
 		&.small {
-			height: 20vh;
-			text-align: left;
-			padding: 0em 2em 0em 10em;
+			height: 18vh;
+			text-align: center;
+			padding: 1.5em;
+
+			@include breakpoint('<=medium') {
+				height: 10vh;
+			}
 		}
 
 		@include breakpoint('>medium') {
@@ -1231,18 +1243,29 @@
 		}
 
 		.inner {
-			@include vendor('transition', ('transform 1.5s ease', 'opacity 2s ease'));
+			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.25s ease'));
 			@include vendor('transition-delay', '0.25s');
 			@include vendor('transform', 'scale(1)');
 			opacity: 1;
 			position: relative;
 			z-index: 1;
 
-			.actions {
-				@include vendor('transition', 'transform 1.25s ease');
-				@include vendor('transition-delay', '1s');
-				@include vendor('transform', 'translateY(0)');
-				opacity: 1;
+			.logo-main {
+				height: 50vh;
+
+				@include breakpoint('<=medium') {
+					height: auto;
+					width: 80vw;
+				}
+			}
+
+			.logo-small {
+				height: 12vh;
+				
+				@include breakpoint('<=medium') {
+					height: auto;
+					width: 80vw;
+				}
 			}
 		}
 
@@ -1282,10 +1305,10 @@
 	#footer {
 		@include padding(6em, 0, (0,0,_size(element-margin),0));
 		@include dark(#4686a0);
-		background-attachment:	fixed,							fixed,							fixed;
-		background-image:		url('images/overlay2.png'),		url('images/overlay4.svg'),		linear-gradient(45deg, _palette(accent6-alt), _palette(accent3-alt) 50%, _palette(accent1-alt) 95%);
-		background-position:	top left,						center center,					center center;
-		background-size:		auto,							cover,							cover;
+		background-attachment:	fixed;
+		background-image:		url('../../images/header.jpg');
+		background-position:	0px 0px;
+		background-size:		cover;
 		text-align: center;
 
 		.icons {
