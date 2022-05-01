@@ -869,6 +869,7 @@
 				@include vendor('transform', 'rotate(45deg)');
 				border-radius: _size(border-radius);
 				border: solid 1px _palette(border);
+				background-color: #fff;
 				display: inline-block;
 				height: 8em;
 				line-height: 8em;
@@ -938,14 +939,16 @@
 
 		td {
 			padding: 0.75em 0.75em;
+			font-size: 1.2em;
+			font-weight: _font(weight-bold);
 		}
 
 		th {
-			color: _palette(fg-bold);
-			font-size: 0.9em;
+			color: _palette(bg);
+			font-size: 1.5em;
 			font-weight: _font(weight-bold);
 			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			text-align: center;
 		}
 
 		thead {
@@ -994,6 +997,7 @@
 	#map {
 		height: 420px;
 		width: 640px;
+		z-index: 2;
 	}
 
 	.map-div {
@@ -1203,7 +1207,7 @@
 			background-attachment:	fixed;
 			background-image:		url('../../images/content-bg.jpg');
 			background-position:	0px 0px;
-			background-size:		cover;
+			background-size:		100%;
 		}
 	}
 
@@ -1213,9 +1217,9 @@
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
 		@include dark(#4686a0);
 		background-attachment:	fixed;
-		background-image:		url('../../images/header.jpg');
-		background-position:	0px -1px;
-		background-size:		cover;
+		background-image:		url('../../images/content-bg.jpg');
+		background-position:	0px 0px;
+		background-size:		100%;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
@@ -1223,10 +1227,11 @@
 		&.small {
 			height: 18vh;
 			text-align: center;
-			padding: 1.5em;
+			padding: 1em;
 
 			@include breakpoint('<=medium') {
-				height: 10vh;
+				padding: 1em 0em 1em 0em;
+				height: 13vh;
 			}
 		}
 
@@ -1263,8 +1268,7 @@
 				height: 12vh;
 				
 				@include breakpoint('<=medium') {
-					height: auto;
-					width: 80vw;
+					height: 9vh;
 				}
 			}
 		}

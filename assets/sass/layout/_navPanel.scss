@@ -103,6 +103,11 @@
 			}
 		}
 
+		.icons {
+			padding-top: 2em;
+			text-align: center;
+		}
+
 		.close {
 			@include icon(false, solid);
 			@include vendor('transition', 'color #{_duration(transition)} ease-in-out');
