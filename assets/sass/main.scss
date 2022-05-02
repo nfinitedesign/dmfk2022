@@ -1214,15 +1214,16 @@
 /* Header */
 
 	#header {
-		@include padding(9em, 0, (0,0,_size(element-margin),0));
 		@include dark(#4686a0);
+		padding: 2em 10em 2em 10em;
 		background-attachment:	fixed;
 		background-image:		url('../../images/content-bg.jpg');
 		background-position:	0px 0px;
 		background-size:		100%;
-		overflow: hidden;
 		position: relative;
 		text-align: center;
+		display:table-cell;
+    	vertical-align:middle;
 
 		&.small {
 			height: 18vh;
@@ -1252,7 +1253,6 @@
 			@include vendor('transition-delay', '0.25s');
 			@include vendor('transform', 'scale(1)');
 			opacity: 1;
-			position: relative;
 			z-index: 1;
 
 			.logo-main {
@@ -1350,13 +1350,6 @@
 			body, input, select, textarea {
 				font-size: 14pt;
 			}
-
-		/* Header */
-
-			#header {
-				@include padding(6em, 0, (0,0,_size(element-margin),0));
-			}
-
 	}
 
 /* Large */
@@ -1404,7 +1397,6 @@
 		/* Header */
 
 			#header {
-				@include padding(5em, 0, (0,0,_size(element-margin),0));
 				background-attachment: scroll;
 
 				br {

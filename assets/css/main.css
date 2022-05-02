@@ -1826,16 +1826,17 @@ button,
 
 /* Header */
 #header {
-  padding: 9em 0 9em 0 ;
   background-color: #4686a0;
   color: rgba(255, 255, 255, 0.75);
+  padding: 2em 10em 2em 10em;
   background-attachment: fixed;
   background-image: url("../../images/content-bg.jpg");
   background-position: 0px 0px;
   background-size: 100%;
-  overflow: hidden;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle; }
   #header a {
     border-bottom-color: rgba(255, 255, 255, 0.5); }
     #header a:hover {
@@ -1919,7 +1920,6 @@ button,
     -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1;
-    position: relative;
     z-index: 1; }
     #header .inner .logo-main {
       height: 50vh; }
@@ -2047,11 +2047,7 @@ body.is-preload #header:after {
 @media screen and (max-width: 1680px) {
   /* Basic */
   body, input, select, textarea {
-    font-size: 14pt; }
-
-  /* Header */
-  #header {
-    padding: 6em 0 6em 0 ; } }
+    font-size: 14pt; } }
 /* Large */
 @media screen and (max-width: 1140px) {
   /* Basic */
@@ -2077,7 +2073,6 @@ body.is-preload #header:after {
 
   /* Header */
   #header {
-    padding: 5em 0 5em 0 ;
     background-attachment: scroll; }
     #header br {
       display: inline; }
