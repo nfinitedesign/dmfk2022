@@ -336,12 +336,18 @@
 /* Section/Article */
 
 	section, article {
+		text-align: left;
+
 		&.special {
 			text-align: center;
 		}
 	}
 
+
+
 	header {
+		text-align: center;
+
 		p {
 			color: _palette(fg-light);
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
@@ -410,7 +416,7 @@
 
 	input[type="text"],
 	input[type="password"],
-	input[type="email"],
+	input[type="Email"],
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
@@ -461,7 +467,7 @@
 
 	input[type="text"],
 	input[type="password"],
-	input[type="email"],
+	input[type="Email"],
 	select {
 		height: _size(element-height);
 	}
@@ -730,6 +736,12 @@
 				}
 			}
 		}
+
+		&.sponsors {
+			li {
+				color: _palette(accent6);
+			}
+		}
 	}
 
 	dl {
@@ -938,13 +950,12 @@
 		}
 
 		td {
-			padding: 0.75em 0.75em;
+			padding: 0.75em;
 			font-size: 1.2em;
-			font-weight: _font(weight-bold);
+			font-weight: _font(weight);
 		}
 
 		th {
-			color: _palette(bg);
 			font-size: 1.5em;
 			font-weight: _font(weight-bold);
 			padding: 0 0.75em 0.75em 0.75em;
@@ -968,6 +979,7 @@
 						border: solid 1px _palette(border);
 						border-left-width: 0;
 						border-top-width: 0;
+						vertical-align: middle;
 
 						&:first-child {
 							border-left-width: 1px;
@@ -988,6 +1000,14 @@
 
 			tfoot {
 				border-top: 0;
+			}
+
+			&.guestlist {
+				font-size: 0.75em;
+
+				td {
+					padding: 0.25em;
+				}
 			}
 		}
 	}
@@ -1153,11 +1173,11 @@
 			color: _palette(dark, fg-bold) !important;
 
 			&:hover {
-				background-color: _palette(dark, border-bg);
+				background-color: _palette(accent6);
 			}
 
 			&:active {
-				background-color: _palette(dark, border2-bg);
+				background-color: _palette(accent6);
 			}
 
 			&.primary {
@@ -1200,6 +1220,10 @@
 
 		&.style1 {
 			background: _palette(bg);
+
+			th {
+				color: _palette(fg-bold);
+			}
 		}
 
 		&.style2 {
@@ -1208,6 +1232,31 @@
 			background-image:		url('../../images/content-bg.jpg');
 			background-position:	0px 0px;
 			background-size:		100%;
+
+			th {
+				color: _palette(bg);
+			}
+		}
+
+		&#intro {
+			padding: 2em 4em 3em 4em;
+
+			@include breakpoint('>medium') {
+				height: 25vh;
+
+				p {
+					font-size: 1.1em;
+				}
+			}
+
+			@include breakpoint('<=medium') {
+				padding: 2em;
+
+				p {
+					margin: 0;
+					font-size: 1em;
+				}
+			}
 		}
 	}
 
@@ -1221,27 +1270,31 @@
 		background-position:	0px 0px;
 		background-size:		100%;
 		position: relative;
+		padding: 0em 2em 0em 2em;
 		text-align: center;
-		display:table-cell;
-    	vertical-align:middle;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		&.small {
+			margin: 0em 0em 2em 0em;
 			height: 18vh;
-			text-align: center;
-			padding: 1em;
+			padding: 0em 1em 0em 1em;
 
 			@include breakpoint('<=medium') {
-				padding: 1em 0em 1em 0em;
+				padding: 2em;
 				height: 13vh;
 			}
 		}
 
 		@include breakpoint('>medium') {
-			height: 100vh;
+			height: 75vh;
 		}
 
 		h1 {
 			margin: 0;
+			text-transform: uppercase;
+			font-weight: 900;
 		}
 
 		p {
@@ -1265,7 +1318,7 @@
 			}
 
 			.logo-small {
-				height: 12vh;
+				height: 10vh;
 				
 				@include breakpoint('<=medium') {
 					height: 9vh;
@@ -1539,7 +1592,7 @@
 		/* Header */
 
 			#header {
-				@include padding(4em, 3em, (0,0,_size(element-margin),0));
+				padding: 4em 2em 0em 2em;
 
 				.actions {
 					margin: _size(element-margin) 0 0 0;

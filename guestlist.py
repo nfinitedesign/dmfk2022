@@ -54,7 +54,7 @@ html_table = ''
 for guest in data.keys():
     entry = data[guest]
     if entry["dont_show"] == 'False':
-        html_table += f"<tr><td>{entry['nick']}</td><td>{entry['number']}</td><td>{entry['city']}</td><td>{entry['company']}</td></tr>\n"
+        html_table += f"<tr><td>{entry['number']}</td><td>{entry['nick']}</td><td>{entry['city']}</td><td>{entry['company']}</td></tr>\n"
 
 # put html table into template
 try:
