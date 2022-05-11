@@ -7,12 +7,12 @@
 	require_once __DIR__ . '/assets/contactform/PHPMailer.php';
 	require_once __DIR__ . '/assets/contactform/SMTP.php';
 
-	$Name = $_POST['email-name'];
-	$Email = $_POST['email-email'];
-	$Subject = $_POST['email-subject'];
-	$Message = $_POST['email-message'];
-	$Category = $_POST['email-category');
-	$Name  = $_POST['email-name'];
+	$Name = $_POST['Email-name'];
+	$Email = $_POST['Email-Email'];
+	$Subject = $_POST['Email-subject'];
+	$Message = $_POST['Email-message'];
+	$Category = $_POST['Email-category');
+	$Name  = $_POST['Email-name'];
 
 	$CopyFrom = 'DMFK2022 Freiburg - Fahrrad und Kurier Kru Freiburg e.V.';
 
@@ -23,12 +23,12 @@
     {
 
         $name   = trim($_REQUEST['name']);
-        $email  = trim($_REQUEST['email']);
+        $Email  = trim($_REQUEST['Email']);
 
         //You can now save this into database or use data to validate user or transactions
 
         echo "Name is :  $name";
-        echo "<br>Email is : $email";
+        echo "<br>Email is : $Email";
     }
 
 	// passing true in constructor enables exceptions in PHPMailer
@@ -51,15 +51,15 @@
 		$mail->addAddress('lo0o0o0o0ngcat@gmail.com', 'Kontaktformular DMFK Website');
 		$mail->addReplyTo($Email, $Name); // to set the reply to
 
-		// Setting the email content
+		// Setting the Email content
 		$mail->IsHTML(true);
-		$mail->Subject = "Send email using Gmail SMTP and PHPMailer";
-		$mail->Body = 'HTML message body. <b>Gmail</b> SMTP email body.';
-		$mail->AltBody = 'Plain text message body for non-HTML email client. Gmail SMTP email body.';
+		$mail->Subject = "Send Email using Gmail SMTP and PHPMailer";
+		$mail->Body = 'HTML message body. <b>Gmail</b> SMTP Email body.';
+		$mail->AltBody = 'Plain text message body for non-HTML Email client. Gmail SMTP Email body.';
 
 		$mail->send();
 		echo "Email message sent.";
 	} catch (Exception $e) {
-		echo "Error in sending email. Mailer Error: {$mail->ErrorInfo}";
+		echo "Error in sending Email. Mailer Error: {$mail->ErrorInfo}";
 	}
 ?>

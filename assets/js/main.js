@@ -33,6 +33,10 @@
 // Scrolly.
 	$('.scrolly').scrolly();
 
+// Insertions
+$("#sponsoren").load('sponsoren.html #sponsoren-read');
+$("#navPanel").load('navpanel.html #nav-mobile');
+
 
 // Nav Panel.
 
@@ -75,3 +79,9 @@
 			.css('transition', 'none');
 
 })(jQuery);
+
+
+function goBack() {
+	event.preventDefault()
+    window.history.back()
+}
