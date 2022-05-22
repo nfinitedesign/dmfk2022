@@ -49,10 +49,14 @@ finally:
     if conn is not None and conn.is_connected():
         conn.close()
 
+
 # put data into html table
 html_table = ''
 for guest in data.keys():
     entry = data[guest]
+    for field in ['number', 'nick', 'city', 'company']:
+        if field not in entry:
+            entry[field] = ''
     if entry["dont_show"] == 'False':
         html_table += f"<tr><td>{entry['number']}</td><td>{entry['nick']}</td><td>{entry['city']}</td><td>{entry['company']}</td></tr>\n"
 
