@@ -1015,7 +1015,7 @@
 
 /* Map */
 	#map {
-		height: 420px;
+		height: 520px;
 		width: 640px;
 		z-index: 2;
 	}
@@ -1024,18 +1024,22 @@
 		justify-content: center;
 	}
 
-
-
-	@include breakpoint('<=medium') {
-		#map {
-			height: 420px;
-			width: 100vw;
-			margin-bottom: 3em;
+	#locations {
+		.restaurants {
+			li::marker {
+				font-size: 1.5em;
+			}
 		}
 	}
 
 
 	@include breakpoint('<=medium') {
+		#map {
+			height: 720px;
+			width: 100vw;
+			margin-bottom: 3em;
+		}
+
 		#locations {
 			padding: 2em 0 0.1em 0;
 
@@ -1235,6 +1239,39 @@
 
 			th {
 				color: _palette(bg);
+			}
+		}
+
+		&#trailer {
+			@include dark(#333);
+  			height: 100vh;
+
+  			@include breakpoint('<=medium') {
+				height: 60vh;
+			}
+
+  			background-attachment:	fixed;
+			background-image:		url('../../images/content-bg.jpg');
+			background-position:	0px 0px;
+			background-size:		100%;
+			padding: 0;
+
+			iframe {
+				position: relative;
+				top: 0%;
+				left: 0%;
+				width: 98vw;
+				@include breakpoint('<=medium') {
+					height: 60vh;
+				}
+
+				@include breakpoint('>medium') {
+					height: 100vh;
+				}
+			}
+
+			&.container {
+				margin: 0;
 			}
 		}
 

@@ -37,6 +37,11 @@
 $("#sponsoren").load('sponsoren.html #sponsoren-read');
 $("#navPanel").load('navpanel.html #nav-mobile');
 
+var w = window.innerWidth;
+var h = window.innerHeight;
+if (w < h) {
+	$("#trailer-container").load('trailer_v.html #trailer-container');
+}
 
 // Nav Panel.
 
