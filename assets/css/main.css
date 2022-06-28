@@ -1626,6 +1626,8 @@ table {
         border-left-width: 1px; }
     table.alt tbody tr:first-child td {
       border-top-width: 1px; }
+    table.alt tbody.qualified {
+      background-color: #fff; }
     table.alt thead {
       border-bottom: 0; }
     table.alt tfoot {

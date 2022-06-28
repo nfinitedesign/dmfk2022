@@ -36,6 +36,10 @@
 // Insertions
 $("#sponsoren").load('sponsoren.html #sponsoren-read');
 $("#navPanel").load('navpanel.html #nav-mobile');
+$("#mr-quali").load('results_mr_quali.html #mr-quali');
+$("#mr-final").load('results_mr_final.html #mr-final');
+$("#mr-cargo").load('results_mr_cargo.html #mr-cargo');
+
 
 var w = window.innerWidth;
 var h = window.innerHeight;
