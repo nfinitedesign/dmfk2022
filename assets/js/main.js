@@ -39,6 +39,14 @@ $("#navPanel").load('navpanel.html #nav-mobile');
 $("#mr-quali").load('results_mr_quali.html #mr-quali');
 $("#mr-final").load('results_mr_final.html #mr-final');
 $("#mr-cargo").load('results_mr_cargo.html #mr-cargo');
+// $("#ac-1").load('results_ac1.html #results');
+// $("#ac-2").load('results_ac2.html #results');
+// $("#ac-3").load('results_ac3.html #results');
+// $("#side-1").load('results_berg.html #results');
+$("#side-2").load('results_sp.html #results');
+$("#side-3").load('results_gs_final.html #results');
+$("#side-4").load('results_gs_quali.html #results');
+// $("#side-4").load('results_side.html #results');
 
 
 var w = window.innerWidth;
