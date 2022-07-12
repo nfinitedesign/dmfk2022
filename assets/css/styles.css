@@ -1,0 +1,54 @@
+body {
+  background-image: url("bg.jpg");
+  background-size: 100%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  	font-family: 'Love Ya Like A Sister';
+}
+
+h1 { font-size: 4rem;
+}
+h2 { font-size: 2rem;
+}
+h3 { font-size: 1.5rem;
+}
+h4 { font-size: 1.3rem;
+}
+
+p, a, li {
+  color: white;
+  text-align: left;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.inner {
+  text-align: center;
+}
+
+.ds {
+  display:  block;
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 3rem;
+
+ }
