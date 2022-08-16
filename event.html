@@ -21,19 +21,6 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet" />
 		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1X2HFEYH0"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'G-F1X2HFEYH0');
-		</script>
 	</head>
 	<body class="is-preload">
 
@@ -65,6 +52,7 @@
 				<li><a href="#timetable">Timetable</a></li>
 				<li><a href="#locations">Locations</a></li>
 				<li><a href="#about">Gänge</a></li>
+				<li><a href="guestlist.html">Gästeliste</a></li>
 			</ul>
 			<ul class="icons">
 				<li><a href="http://www.fkk-freiburg.org/" class="icon solid fa fa-globe"><span class="label">Website</span></a></li>
@@ -74,495 +62,481 @@
 			</ul>
 		</nav>
 
-		<!-- Anmeldung Teaser -->
-			<section id="anmeldung" class="main style1 special">
-				<div class="container">
-					<header class="major">
-						<h2>Hunger? Dann ab zur Tischreservierung!</h2>
-						<p>Hier geht's direkt zur Anmeldung und Liste unserer Gäste.</p>
-					</header>
-					<ul class="actions special">
-						<li><a href="https://pretix.eisxzeit.uber.space/FKK/DMFK/" class="button wide primary"  target="_blank">Tickets</a></li>
-						<li><a href="guestlist.html" class="button wide">Gästeliste</a></li>
-					</ul>
+	<!-- Timetable -->
+		<section id="timetable" class="main style2 special">
+			<div class="container">
+				<header class="major">
+					<h1>Timetable</h1>
+					<p>Was gibts wann und wo zu essen? <b>Die Speisekarte findest du hier!</b></p>
+				</header>
+				<header>
+					<h2>Amuse-Gueule in Karlsruhe</h2>
+					<p>Mittwoch</p>
+				</header>
+				Gruß aus der Küche vom <b>Kollektiv Kirschgrün</b> aus Karlsruhe.<br><br>
+				<div class="table-wrapper">
+					<table class="alt">
+						<thead>
+							<tr>
+								<th width="25%">Uhrzeit</th>
+								<th width="45%">Event</th>
+								<th width="30%">Location</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Mi: ab 16:00</td>
+								<td>Anmeldung</td>
+								<td>Radkurier Karlsruhe, Nebeniusstr 43.</td>
+							</tr>
+							<tr>
+								<td>Mi: 18:00</td>
+								<td>Groupride zur Küchenkatze</td>
+								<td>Radkurier Karlsruhe, Nebeniusstr 43.</td>
+							</tr>
+							<tr>
+								<td>Mi: 18:00 - 21:00</td>
+								<td>Gruß von der Küchenkatze</td>
+								<td>CafeNoir, Schauenburgstr. 5</td>
+							</tr>
+							<tr>
+								<td>Mi: 21:00 - Open End</td>
+								<td>Abendessen + HangOut</td>
+								<td>CafeNoir, Schauenburgstr. 5</td>
+							</tr>
+							<tr>
+								<td>Do: 7:30 - 11:00</td>
+								<td>Frühstück</td>
+								<td>Beim Housing (Info per TG)</td>
+							</tr>
+							<tr>
+								<td>Do: 8:00 bzw. 11:00</td>
+								<td>Start Groupride bzw. Zugride</td>
+								<td>Info per TG</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-			</section>
-
-		<!-- Timetable -->
-			<section id="timetable" class="main style2 special">
-				<div class="container">
-					<header class="major">
-						<h1>Vorläufiger Timetable</h1>
-						<p>Was gibts wann und wo zu essen? <b>Die Speisekarte wird laufend aktualisiert!</b></p>
-					</header>
-					<header>
-						<h2>Amuse-Gueule in Karlsruhe</h2>
-						<p>Mittwoch</p>
-					</header>
-					Gruß aus der Küche vom <b>Kollektiv Kirschgrün</b> aus Karlsruhe.<br> Fragen dazu an: <a href="mailto:pre-event@dmfk2022.de">pre-event@dmfk2022.de</a>.<br><br>
-					<div class="table-wrapper">
-						<table class="alt">
-							<thead>
-								<tr>
-									<th width="25%">Uhrzeit</th>
-									<th width="45%">Event</th>
-									<th width="30%">Location</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Mi: ab 16:00</td>
-									<td>Anmeldung</td>
-									<td>Radkurier Karlsruhe, Nebeniusstr 43.</td>
-								</tr>
-								<tr>
-									<td>Mi: 18:00</td>
-									<td>Groupride zur Küchenkatze</td>
-									<td>Radkurier Karlsruhe, Nebeniusstr 43.</td>
-								</tr>
-								<tr>
-									<td>Mi: 18:00 - 21:00</td>
-									<td>Gruß von der Küchenkatze</td>
-									<td>CafeNoir, Schauenburgstr. 5</td>
-								</tr>
-								<tr>
-									<td>Mi: 21:00 - Open End</td>
-									<td>Abendessen + HangOut</td>
-									<td>CafeNoir, Schauenburgstr. 5</td>
-								</tr>
-								<tr>
-									<td>Do: 7:30 - 11:00</td>
-									<td>Frühstück</td>
-									<td>Beim Housing (Info per TG)</td>
-								</tr>
-								<tr>
-									<td>Do: 8:00 bzw. 11:00</td>
-									<td>Start Groupride bzw. Zugride</td>
-									<td>Info per TG</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<header>
-						<h2>Aperitif</h2>
-						<p>Donnerstag</p>
-					</header>
-					<div class="table-wrapper">
-						<table class="alt">
-							<thead>
-								<tr>
-									<th width="25%">Uhrzeit</th>
-									<th width="45%">Event</th>
-									<th width="30%">Location</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>16:00 - 22:00</td>
-									<td>Anmeldung</td>
-									<td>Schattenparker</td>
-								</tr>
-								<tr>
-									<td>16:00 - 17:00</td>
-									<td>Ankunft Groupride aus Karlsruhe</td>
-									<td>Schattenparker</td>
-								</tr>
-								<tr>
-									<td>19:00 - 21:00</td>
-									<td>Alleyperitif</td>
-									<td>Schattenparker</td>
-								</tr>
-								<tr>
-									<td>21:00</td>
-									<td>Abendessen</td>
-									<td>Schattenparker</td>
-								</tr>
-								<tr>
-									<td>22:00 - 2:00</td>
-									<td>Party: DnB, DJs</td>
-									<td>Schattenparker</td>
-								</tr>
-								<tr>
-									<td>23:00</td>
-									<td>Arm Wrestling Contest</td>
-									<td>Schattenparker</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<header>
-						<h2>Vorspeise</h2>
-						<p>Freitag</p>
-					</header>
-					<div class="table-wrapper">
-						<table class="alt">
-							<thead>
-								<tr>
-									<th width="25%">Uhrzeit</th>
-									<th width="45%">Event</th>
-									<th width="30%">Location</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>16:00 - 23:00</td>
-									<td>Anmeldung</td>
-									<td>Beim Housing</td>
-								</tr>
-								<tr>
-									<td>10:00 - 14:00</td>
-									<td>Frühstück</td>
-									<td>Seebühne Seepark</td>
-								</tr>
-								<tr>
-									<td>14:00 - 17:00</td>
-									<td>Ausfahrt</td>
-									<td>Seebühne Seepark</td>
-								</tr>
-								<tr>
-									<td>17:00 - 18:30</td>
-									<td>Bergziegenkäse</td>
-									<td>Am Schönberg, 79280 Au</td>
-								</tr>
-								<tr>
-									<td>19:00 - 20:00</td>
-									<td>Abendessen</td>
-									<td>SUSI Café</td>
-								</tr>
-								<tr>
-									<td>20:30 - 22:00</td>
-									<td>Katzenschweisssuppe</td>
-									<td>SUSI Café</td>
-								</tr>
-								<tr>
-									<td>22:00 - Open End</td>
-									<td>Party</td>
-									<td>SUSI Café</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-
-					<header>
-						<h2>Zwischengang</h2>
-						<p>Samstag</p>
-					</header>
-					<div class="table-wrapper">
-						<table class="alt">
-							<thead>
-								<tr>
-									<th width="25%">Uhrzeit</th>
-									<th width="45%">Event</th>
-									<th width="30%">Location</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>10:00 - 14:00</td>
-									<td>Anmeldung</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>9:00 - 11:00</td>
-									<td>Frühstück</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>10:00 - 15:00</td>
-									<td>Main Race: Qualifikation</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>10:00 - 15:00</td>
-									<td>Goldsprints: Qualifikation</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>10:00 - 15:00</td>
-									<td>Sprints: automatische Teilnahme<br>während der Qualifikation</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>16:00 - 17:00</td>
-									<td>Skid, Trackstand, Footdown</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>17:00 - 18:00</td>
-									<td>Open Forum</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>18:00 - 20:00</td>
-									<td>Catpaccio (vegan)</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>20:00 - 22:00</td>
-									<td>Dinner</td>
-									<td>Schattenparker</td>
-								</tr>
-								<tr>
-									<td>21:00 - 22:00</td>
-									<td>Goldsprints: Finale</td>
-									<td>Schattenparker</td>
-								</tr>
-								<tr>
-									<td>22:00 - Open End</td>
-									<td>Band: Das Blanke Extrem<br>Party</td>
-									<td>Schattenparker</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-
-					<header>
-						<h2>Hauptgericht</h2>
-						<p>Sonntag</p>
-					</header>
-					<div class="table-wrapper">
-						<table class="alt">
-							<thead>
-								<tr>
-									<th width="25%">Uhrzeit</th>
-									<th width="45%">Event</th>
-									<th width="30%">Location</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>9:00 - 11:00</td>
-									<td>Frühstück</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>10:00 - 12:30</td>
-									<td>Main Race: Cargo</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>13:00 - 16:30</td>
-									<td>Main Race: Finale</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>ca. 14:00 - 16:00</td>
-									<td>Scoop - Funky Stuff aus Freiburg</td>
-									<td>Main Race: RadsFatz Checkpoint</td>
-								</tr>
-								<tr>
-									<td>17:30 - 18:00</td>
-									<td>Stevie Wheels Bike Messenger Show</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>18:00 - 19:00</td>
-									<td>Sieger*innenehrung</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>20:00 - Open End</td>
-									<td>Afterparty / Chillout</td>
-									<td>Silberdobel</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-
-					<header>
-						<h2>Dessert</h2>
-						<p>Montag</p>
-					</header>
-					<div class="table-wrapper">
-						<table class="alt">
-							<thead>
-								<tr>
-									<th width="25%">Uhrzeit</th>
-									<th width="45%">Event</th>
-									<th width="30%">Location</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>10:00 - 17:00</td>
-									<td>Absacker / Aufräumen</td>
-									<td>Main Race Gelände</td>
-								</tr>
-								<tr>
-									<td>17:00 - Open End</td>
-									<td>Tour de Franzbrötchen</td>
-									<td>Main Race Gelände</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+				<header>
+					<h2>Aperitif</h2>
+					<p>Donnerstag</p>
+				</header>
+				<div class="table-wrapper">
+					<table class="alt">
+						<thead>
+							<tr>
+								<th width="25%">Uhrzeit</th>
+								<th width="45%">Event</th>
+								<th width="30%">Location</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>16:00 - 22:00</td>
+								<td>Anmeldung</td>
+								<td>Schattenparker</td>
+							</tr>
+							<tr>
+								<td>16:00 - 17:00</td>
+								<td>Ankunft Groupride aus Karlsruhe</td>
+								<td>Schattenparker</td>
+							</tr>
+							<tr>
+								<td>19:00 - 21:00</td>
+								<td>Alleyperitif</td>
+								<td>Schattenparker</td>
+							</tr>
+							<tr>
+								<td>21:00</td>
+								<td>Abendessen</td>
+								<td>Schattenparker</td>
+							</tr>
+							<tr>
+								<td>22:00 - 2:00</td>
+								<td>Party: DnB, DJs</td>
+								<td>Schattenparker</td>
+							</tr>
+							<tr>
+								<td>23:00</td>
+								<td>Arm Wrestling Contest</td>
+								<td>Schattenparker</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-			</section>
+				<header>
+					<h2>Vorspeise</h2>
+					<p>Freitag</p>
+				</header>
+				<div class="table-wrapper">
+					<table class="alt">
+						<thead>
+							<tr>
+								<th width="25%">Uhrzeit</th>
+								<th width="45%">Event</th>
+								<th width="30%">Location</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>16:00 - 23:00</td>
+								<td>Anmeldung</td>
+								<td>Beim Housing</td>
+							</tr>
+							<tr>
+								<td>10:00 - 14:00</td>
+								<td>Frühstück</td>
+								<td>Seebühne Seepark</td>
+							</tr>
+							<tr>
+								<td>14:00 - 17:00</td>
+								<td>Ausfahrt</td>
+								<td>Seebühne Seepark</td>
+							</tr>
+							<tr>
+								<td>17:00 - 18:30</td>
+								<td>Bergziegenkäse</td>
+								<td>Am Schönberg, 79280 Au</td>
+							</tr>
+							<tr>
+								<td>19:00 - 20:00</td>
+								<td>Abendessen</td>
+								<td>SUSI Café</td>
+							</tr>
+							<tr>
+								<td>20:30 - 22:00</td>
+								<td>Katzenschweisssuppe</td>
+								<td>SUSI Café</td>
+							</tr>
+							<tr>
+								<td>22:00 - Open End</td>
+								<td>Party</td>
+								<td>SUSI Café</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 
-		<!-- Locations -->
-			<section id="locations" class="main style1 special">
-				<div class="container">
-					<header class="major">
-						<h1>Locations</h1>
-						<p>Wo wird was serviert?</p>
-					</header>
-					<div class="row gtr-150 map-div">
-						<div id="map"></div>
-						<script>
-							const accessToken = 'bD7NMBQtwdNDTngF9xcXUMoMKYY4E1vWsXAr1eQq9tJQpfhwuy2lD0KqS41V11Yu';
-							const styleId = '10e5778f-1b2e-4c03-abcb-ff434a5be1fb';
-							const map = L.map('map').setView([47.99231643459227, 7.83869371463104], 12);
-							L.tileLayer(
-								`https://tile.jawg.io/${styleId}/{z}/{x}/{y}.png?access-token=${accessToken}`, {
-								attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank" class="jawg-attrib">&copy; <b>Jawg</b>Maps</a> | <a href="https://www.openstreetmap.org/copyright" title="OpenStreetMap is open data licensed under ODbL" target="_blank" class="osm-attrib">&copy; OSM contributors</a>',
-								maxZoom: 17,
-								minZoom: 12
-								}
-							).addTo(map);
+				<header>
+					<h2>Zwischengang</h2>
+					<p>Samstag</p>
+				</header>
+				<div class="table-wrapper">
+					<table class="alt">
+						<thead>
+							<tr>
+								<th width="25%">Uhrzeit</th>
+								<th width="45%">Event</th>
+								<th width="30%">Location</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>10:00 - 14:00</td>
+								<td>Anmeldung</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>9:00 - 11:00</td>
+								<td>Frühstück</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>10:00 - 15:00</td>
+								<td>Main Race: Qualifikation</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>10:00 - 15:00</td>
+								<td>Goldsprints: Qualifikation</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>10:00 - 15:00</td>
+								<td>Sprints: automatische Teilnahme<br>während der Qualifikation</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>16:00 - 17:00</td>
+								<td>Skid, Trackstand, Footdown</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>17:00 - 18:00</td>
+								<td>Open Forum</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>18:00 - 20:00</td>
+								<td>Catpaccio (vegan)</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>20:00 - 22:00</td>
+								<td>Dinner</td>
+								<td>Schattenparker</td>
+							</tr>
+							<tr>
+								<td>21:00 - 22:00</td>
+								<td>Goldsprints: Finale</td>
+								<td>Schattenparker</td>
+							</tr>
+							<tr>
+								<td>22:00 - Open End</td>
+								<td>Band: Das Blanke Extrem<br>Party</td>
+								<td>Schattenparker</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 
-							var data = [
-							{
-							"latitud": 47.98772003903343,
-							"longitud": 7.872382491476115,
-							"name": "Main Race HQ"
-							},
-							{
-							"latitud": 47.986484546224055,
-							"longitud": 7.868084444067888,
-							"name": "Housing"
-							},
-							{
-							"latitud": 48.024677655662586,
-							"longitud": 7.837044385560214,
-							"name": "Schattenparker"
-							},
-							{
-							"latitud": 47.97453868613969,
-							"longitud": 7.8280038659091,
-							"name": "SUSI Projekt"
-							},
-							{
-							"latitud": 48.01225969019943,
-							"longitud": 7.814886789119726,
-							"name": "Bühne Seepark"
-							},
-							{
-							"latitud": 47.95480667716172,
-							"longitud": 7.8211284261101275,
-							"name": "Bergziegenkäse"
-							},
-							{
-							"latitud": 47.97520119302499,
-							"longitud": 7.848281171741187,
-							"name": "Silberdobel"
+				<header>
+					<h2>Hauptgericht</h2>
+					<p>Sonntag</p>
+				</header>
+				<div class="table-wrapper">
+					<table class="alt">
+						<thead>
+							<tr>
+								<th width="25%">Uhrzeit</th>
+								<th width="45%">Event</th>
+								<th width="30%">Location</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>9:00 - 11:00</td>
+								<td>Frühstück</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>10:00 - 12:30</td>
+								<td>Main Race: Cargo</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>13:00 - 16:30</td>
+								<td>Main Race: Finale</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>ca. 14:00 - 16:00</td>
+								<td>Scoop - Funky Stuff aus Freiburg</td>
+								<td>Main Race: RadsFatz Checkpoint</td>
+							</tr>
+							<tr>
+								<td>17:30 - 18:00</td>
+								<td>Stevie Wheels Bike Messenger Show</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>18:00 - 19:00</td>
+								<td>Sieger*innenehrung</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>20:00 - Open End</td>
+								<td>Afterparty / Chillout</td>
+								<td>Silberdobel</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<header>
+					<h2>Dessert</h2>
+					<p>Montag</p>
+				</header>
+				<div class="table-wrapper">
+					<table class="alt">
+						<thead>
+							<tr>
+								<th width="25%">Uhrzeit</th>
+								<th width="45%">Event</th>
+								<th width="30%">Location</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>10:00 - 17:00</td>
+								<td>Absacker / Aufräumen</td>
+								<td>Main Race Gelände</td>
+							</tr>
+							<tr>
+								<td>17:00 - Open End</td>
+								<td>Tour de Franzbrötchen</td>
+								<td>Main Race Gelände</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+	<!-- Locations -->
+		<section id="locations" class="main style1 special">
+			<div class="container">
+				<header class="major">
+					<h1>Locations</h1>
+					<p>Wo wird was serviert?</p>
+				</header>
+				<div class="row gtr-150 map-div">
+					<div id="map"></div>
+					<script>
+						const accessToken = 'bD7NMBQtwdNDTngF9xcXUMoMKYY4E1vWsXAr1eQq9tJQpfhwuy2lD0KqS41V11Yu';
+						const styleId = '10e5778f-1b2e-4c03-abcb-ff434a5be1fb';
+						const map = L.map('map').setView([47.99231643459227, 7.83869371463104], 12);
+						L.tileLayer(
+							`https://tile.jawg.io/${styleId}/{z}/{x}/{y}.png?access-token=${accessToken}`, {
+							attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank" class="jawg-attrib">&copy; <b>Jawg</b>Maps</a> | <a href="https://www.openstreetmap.org/copyright" title="OpenStreetMap is open data licensed under ODbL" target="_blank" class="osm-attrib">&copy; OSM contributors</a>',
+							maxZoom: 17,
+							minZoom: 12
 							}
-							]
+						).addTo(map);
 
-							var jsonFeatures = [];
+						var data = [
+						{
+						"latitud": 47.98772003903343,
+						"longitud": 7.872382491476115,
+						"name": "Main Race HQ"
+						},
+						{
+						"latitud": 47.986484546224055,
+						"longitud": 7.868084444067888,
+						"name": "Housing"
+						},
+						{
+						"latitud": 48.024677655662586,
+						"longitud": 7.837044385560214,
+						"name": "Schattenparker"
+						},
+						{
+						"latitud": 47.97453868613969,
+						"longitud": 7.8280038659091,
+						"name": "SUSI Projekt"
+						},
+						{
+						"latitud": 48.01225969019943,
+						"longitud": 7.814886789119726,
+						"name": "Bühne Seepark"
+						},
+						{
+						"latitud": 47.95480667716172,
+						"longitud": 7.8211284261101275,
+						"name": "Bergziegenkäse"
+						},
+						{
+						"latitud": 47.97520119302499,
+						"longitud": 7.848281171741187,
+						"name": "Silberdobel"
+						}
+						]
 
-							data.forEach(function(point, index){
-								var lat = point.latitud;
-								var lon = point.longitud;
-								var markerIndex= index + 1;
-								var titleString = markerIndex.toString() + ": " + point.name;
-								var markerOptions = {
-									title: titleString,
-									alt: titleString,
-									clickable: true,
-									draggable: false,
-									opacity: 0.5,
-									icon: L.divIcon({
-										iconUrl: 'https://www.jawg.io/docs/images/icons/eiffel-tower.png',
-										iconSize: [50, 50],
-										html: '<i class="map-marker fa-solid fa-' + markerIndex.toString() + '"></i>',
-										className: 'map-marker'
-									})
-								};
-									
-								var marker = new L.marker([lat, lon], markerOptions);
-								marker.bindTooltip(titleString, {permanent: false, className: "my-label", offset: [5, 0] });
-								marker.addTo(map);
-							});
-						</script>
+						var jsonFeatures = [];
 
-						<div class="restaurants">
-							<h3>Restaurants</h3>
-							<ol>
-								<li>Main Race HQ </br><sup>Alter Messplatz, Schwarzwaldstrasse</sup></li>
-								<li>Housing </br><sup>Turnhalle der Emil-Thoma-Schule</sup></li>
-								<li>Schattenparker</br><sup>Im Eselwinkel 7</sup></li>
-								<li>SUSI Projekt <br><sup>Vaubanallee 2</sup></li>
-								<li>Seebühne <br><sup>Seepark, im Nord-Westen am See</sup></li>
-								<li>Bergziegenkäse<br><sup>Am Schönberg, 79280 Au</sup></li>
-								<li>Grillplätze Silberdobel<br><sup>Schwarzwaldstrasse, ca. Haltestelle Wonnhalde</sup></li>
-							</ol>
-						</div>
+						data.forEach(function(point, index){
+							var lat = point.latitud;
+							var lon = point.longitud;
+							var markerIndex= index + 1;
+							var titleString = markerIndex.toString() + ": " + point.name;
+							var markerOptions = {
+								title: titleString,
+								alt: titleString,
+								clickable: true,
+								draggable: false,
+								opacity: 0.5,
+								icon: L.divIcon({
+									iconUrl: 'https://www.jawg.io/docs/images/icons/eiffel-tower.png',
+									iconSize: [50, 50],
+									html: '<i class="map-marker fa-solid fa-' + markerIndex.toString() + '"></i>',
+									className: 'map-marker'
+								})
+							};
+								
+							var marker = new L.marker([lat, lon], markerOptions);
+							marker.bindTooltip(titleString, {permanent: false, className: "my-label", offset: [5, 0] });
+							marker.addTo(map);
+						});
+					</script>
+
+					<div class="restaurants">
+						<h3>Restaurants</h3>
+						<ol>
+							<li>Main Race HQ </br><sup>Alter Messplatz, Schwarzwaldstrasse</sup></li>
+							<li>Housing </br><sup>Turnhalle der Emil-Thoma-Schule</sup></li>
+							<li>Schattenparker</br><sup>Im Eselwinkel 7</sup></li>
+							<li>SUSI Projekt <br><sup>Vaubanallee 2</sup></li>
+							<li>Seebühne <br><sup>Seepark, im Nord-Westen am See</sup></li>
+							<li>Bergziegenkäse<br><sup>Am Schönberg, 79280 Au</sup></li>
+							<li>Grillplätze Silberdobel<br><sup>Schwarzwaldstrasse, ca. Haltestelle Wonnhalde</sup></li>
+						</ol>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-		<!-- About -->
-			<section id="about" class="main style2">
-				<div class="container">
-					<header class="major">
-						<h2>Gänge</h2>
-						<p>Die folgenden Disziplinen werden angeboten</p>
-					</header>
-					<div class="row gtr-150">
-						<div class="col-4 col-12-medium">
-							<ul class="major-icons">
-								<li><span class="icon solid style1 major fa-flag-checkered"></span></li>
-							</ul>
-						</div>
-						<div class="col-8 col-12-medium">
-							<h4>Main Race</h4>
-							<p>Das Main Race ist der Hauptgang einer jeden Fahrradkurier*innen-Meisterschaft, hier werden die und der gewiefteste und schnellste gesucht. Meister*in wird, wer auf einem abgesperrten Einbahnstrassen-Parkour die Manifeste am schnellsten erledigt. <br>Ein Manifest enthält verschiedenste Jobs, in denen Checkpoints auf der Strecke in festgelegten Reihenfolgen angefahren werden müssen. Wie im echten Kurieralltag kommt es nicht nur auf die Geschwindigkeit an, sondern insbesondere darauf wie man die Jobs am effektivsten kombiniert und einen kühlen Kopf bewahrt.</p>
-							<h4>Cargo Race</h4>
-							<p>Gleiches Format wie beim Main Race, allerdings mit Cargo-Rädern. Jeder kann teilnehmen, aber ohne Lastenrad wird's schwierig, denn es gibt Paletten, Kartons, Autoreifen und anderes Sperrgut zu transportieren.</p>
-							<h4>Bergsprint</h4>
-							<p>Hier geht‘s bergauf: hoch oben auf dem Berg gibt‘s das kühlste Bier. Die schnellste Bergziege schnappt sich den Preis.</p>
-							<h4>Goldsprint</h4>
-							<p>Spinning a la Radkurier! Dank widerstandlosem Hinterrad kann sich hier jede*r wie ein Hamster auf dem Fahrrad fühlen. Der schnellste Weg, sich in unter einer Minute einen Muskelkater mitzunehmen: auf keinen Fall auslassen! <br> Während der Quali am Samstag kann jede*r ihre und seine Bestzeit auf diesem wunderbaren Foltergerät abstrampeln. Die schnellsten Sechs werden abends auf Schatti vor großem Publikum in den Ausscheidungsendspurt gehen, moderiert von Showmaster HBF aka DJ!</p>
-							<h4>Skids</h4>
-							<p>Beim Skid ist der längste Bremsweg der, der aufs Podium führt. Falls du nicht weißt wovon die Rede ist: unbedingt anschauen! Dieser Wettbewerb ist für Zuschauende spektakulär und ohne Übung und Fixie keiner, an dem man spontan teilnehmen sollte…</p>
-							<h4>Sprints</h4>
-							<p>Unser Sprint ist ein Musterbeispiel dafür, dass bei uns alle wie im wahre Leben ist! Schließlich muss man in Stunde 7 der Schicht einem Radler in hautenger Sportbekleidung auf einem sauteuren Fahrrad auch kurz zeigen, wer die dickeren Waden hat. Aber Achtung, dabei die Abzweigung zum nächsten Kunden nicht verpassen…! <br> Deshalb ist unser Sprint während der Qualifikation: an der Schützenallee stadtauswärts wird deine Geschwindigkeit gemessen und angezeigt. Besonders wichtig: Deine Startnummer gut lesbar anzubringen! Jede Vorbeifahrt an der Speedcam ist ein Versuch den Geschwindigkeitsrekord aufzustellen. Special thanks an unseren Daniel Düsentrieb Malte für diese Sonderanfertigung!</p>
-							<h4>Foot-Down</h4>
-							<p>...oder eben nicht! In großer Gruppe wird auf immer enger werdendem Platz gekreist – anrempeln ist erlaubt. Die Füße müssen auf den Pedalen bleiben, wer den Boden berührt ist raus!</p>
-							<h4>Trackstand</h4>
-							<p>Der Legende nach die Fähigkeit an der roten Ampel auf dem Fahrrad zu balancieren, um dann schnell loszufahren. Es gibt wohl Menschen, die es geschafft haben, sich auf ihrem stehenden Rad komplett auszuziehen, ohne den Boden zu berühren – diese Kurier*innen-Kunst. Manege frei!</p>
-						</div>
+	<!-- About -->
+		<section id="about" class="main style2">
+			<div class="container">
+				<header class="major">
+					<h2>Gänge</h2>
+					<p>Die folgenden Disziplinen werden angeboten</p>
+				</header>
+				<div class="row gtr-150">
+					<div class="col-4 col-12-medium">
+						<ul class="major-icons">
+							<li><span class="icon solid style1 major fa-flag-checkered"></span></li>
+						</ul>
+					</div>
+					<div class="col-8 col-12-medium">
+						<h4>Main Race</h4>
+						<p>Das Main Race ist der Hauptgang einer jeden Fahrradkurier*innen-Meisterschaft, hier werden die und der gewiefteste und schnellste gesucht. Meister*in wird, wer auf einem abgesperrten Einbahnstrassen-Parkour die Manifeste am schnellsten erledigt. <br>Ein Manifest enthält verschiedenste Jobs, in denen Checkpoints auf der Strecke in festgelegten Reihenfolgen angefahren werden müssen. Wie im echten Kurieralltag kommt es nicht nur auf die Geschwindigkeit an, sondern insbesondere darauf wie man die Jobs am effektivsten kombiniert und einen kühlen Kopf bewahrt.</p>
+						<h4>Cargo Race</h4>
+						<p>Gleiches Format wie beim Main Race, allerdings mit Cargo-Rädern. Jeder kann teilnehmen, aber ohne Lastenrad wird's schwierig, denn es gibt Paletten, Kartons, Autoreifen und anderes Sperrgut zu transportieren.</p>
+						<h4>Bergsprint</h4>
+						<p>Hier geht‘s bergauf: hoch oben auf dem Berg gibt‘s das kühlste Bier. Die schnellste Bergziege schnappt sich den Preis.</p>
+						<h4>Goldsprint</h4>
+						<p>Spinning a la Radkurier! Dank widerstandlosem Hinterrad kann sich hier jede*r wie ein Hamster auf dem Fahrrad fühlen. Der schnellste Weg, sich in unter einer Minute einen Muskelkater mitzunehmen: auf keinen Fall auslassen! <br> Während der Quali am Samstag kann jede*r ihre und seine Bestzeit auf diesem wunderbaren Foltergerät abstrampeln. Die schnellsten Sechs werden abends auf Schatti vor großem Publikum in den Ausscheidungsendspurt gehen, moderiert von Showmaster HBF aka DJ!</p>
+						<h4>Skids</h4>
+						<p>Beim Skid ist der längste Bremsweg der, der aufs Podium führt. Falls du nicht weißt wovon die Rede ist: unbedingt anschauen! Dieser Wettbewerb ist für Zuschauende spektakulär und ohne Übung und Fixie keiner, an dem man spontan teilnehmen sollte…</p>
+						<h4>Sprints</h4>
+						<p>Unser Sprint ist ein Musterbeispiel dafür, dass bei uns alle wie im wahre Leben ist! Schließlich muss man in Stunde 7 der Schicht einem Radler in hautenger Sportbekleidung auf einem sauteuren Fahrrad auch kurz zeigen, wer die dickeren Waden hat. Aber Achtung, dabei die Abzweigung zum nächsten Kunden nicht verpassen…! <br> Deshalb ist unser Sprint während der Qualifikation: an der Schützenallee stadtauswärts wird deine Geschwindigkeit gemessen und angezeigt. Besonders wichtig: Deine Startnummer gut lesbar anzubringen! Jede Vorbeifahrt an der Speedcam ist ein Versuch den Geschwindigkeitsrekord aufzustellen. Special thanks an unseren Daniel Düsentrieb Malte für diese Sonderanfertigung!</p>
+						<h4>Foot-Down</h4>
+						<p>...oder eben nicht! In großer Gruppe wird auf immer enger werdendem Platz gekreist – anrempeln ist erlaubt. Die Füße müssen auf den Pedalen bleiben, wer den Boden berührt ist raus!</p>
+						<h4>Trackstand</h4>
+						<p>Der Legende nach die Fähigkeit an der roten Ampel auf dem Fahrrad zu balancieren, um dann schnell loszufahren. Es gibt wohl Menschen, die es geschafft haben, sich auf ihrem stehenden Rad komplett auszuziehen, ohne den Boden zu berühren – diese Kurier*innen-Kunst. Manege frei!</p>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-		<!-- Sponsoren -->
-			<section id="sponsoren" class="main style1 special"></section>
+	<!-- Sponsoren -->
+		<section id="sponsoren" class="main style1 special"></section>
 
-		<!-- Footer -->
-			<section id="footer">
-				<ul class="icons">
-					<li><a href="http://www.fkk-freiburg.org/" class="icon solid fa fa-globe"><span class="label">Website</span></a></li>
-					<li><a href="https://www.facebook.com/fahrradkurierkumpel" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="https://www.instagram.com/dmfk.2022/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="mailto:kontakt@dmfk2022.de" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; 2022 Fahrrad und Kurier Kru Freiburg e.V.</li>
-					<li><a href="impressum.html">Impressum</a></li>
-					<li><a href="datenschutz.html">Datenschutz</a></li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</section>
+	<!-- Footer -->
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="http://www.fkk-freiburg.org/" class="icon solid fa fa-globe"><span class="label">Website</span></a></li>
+				<li><a href="https://www.facebook.com/fahrradkurierkumpel" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/dmfk.2022/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="mailto:kontakt@dmfk2022.de" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; 2022 Fahrrad und Kurier Kru Freiburg e.V.</li>
+				<li><a href="impressum.html">Impressum</a></li>
+				<li><a href="datenschutz.html">Datenschutz</a></li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
